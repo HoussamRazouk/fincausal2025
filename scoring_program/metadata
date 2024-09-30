@@ -1,0 +1,2 @@
+command: python $program/task_evaluate.py from-folder $input $output
+description: Fincausal 2025 Task competition evaluation program.

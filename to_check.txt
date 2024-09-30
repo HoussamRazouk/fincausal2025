@@ -1,0 +1,5 @@
+{
+"response": "Change of tax laws or practices as a result of base erosion and profit shifting initiatives ("BEPS")."
+}
+Prediction Model: llama3-8b
+Domain: finance
