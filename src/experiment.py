@@ -91,8 +91,8 @@ def model_tread(test_data,model,client,output_path):
     results=[]
     for index, row in test_data.iterrows():
         print(index)
-        if True:
-        #try:
+        #if True:
+        try:
             ID=row['ID']
             Answer=row['Answer']
             Question=row['Question']
@@ -110,11 +110,11 @@ def model_tread(test_data,model,client,output_path):
                 'response'
                 ]]
             df.to_csv(output_path+f"{model}_model_prediction.csv",index=False)
-        #except:
-        #    print("Failed")
-        #    print(row)
-        #    with open(output_path+f'to_check/{model}/'+f"{model}_{index}_fail.txt",'w') as f:
-        #         f.write(str(row))
+        except:
+            print("Failed")
+            print(row)
+            with open(output_path+f'to_check/{model}/'+f"{model}_{index}_fail.txt",'w') as f:
+                 f.write(str(row))
         
 
 #test()
@@ -122,40 +122,43 @@ def main():
     output_path='results/Q&A_LLM/'
     test_data=pd.read_csv("data/reference_data_practise_en.csv", sep=';')
     models=["llama3-70b",
-            "mixtral-8x22b-instruct",
+            #"mixtral-8x22b-instruct",
             "gpt-3.5-turbo",
             "gpt-4-turbo",
             "llama3-8b",
-            "mixtral-8x7b-instruct",
-            "mistral-7b-instruct"]
+            #"mixtral-8x7b-instruct",
+            #"mistral-7b-instruct",
+            ]
     threads = []
-    model=models[4]
-    try:
-         os.makedirs(output_path+f'to_check/{model}')
-    except:
-         print(output_path+f'to_check/{model} already exists')
+    #model=models[2]
+    for model in models:
+        try:
+            os.makedirs(output_path+f'to_check/{model}')
+        except:
+            print(output_path+f'to_check/{model} already exists')
+        
+        if os.path.isfile(output_path+f"{model}_model_prediction.csv"):
+                print(f"{model} already tested")
+                continue
+        if model in ["gpt-3.5-turbo","gpt-4-turbo"]: # deferent API key 
+            #different API Are used 
+            init()
+            client = OpenAI()
+        
+        else :
+            #different API Are used 
+            client=init_lama()
+        thread = threading.Thread(target=model_tread, args=(test_data,model,client,output_path))
+        threads.append(thread)
+        thread.start()
     
-    if os.path.isfile(output_path+f"{model}_model_prediction.csv"):
-            print(f"{model} already tested")
-            #continue
-    if model in ["gpt-3.5-turbo","gpt-4-turbo"]: # deferent API key 
-        #different API Are used 
-        init()
-        client = OpenAI()
     
-    else :
-        #different API Are used 
-        client=init_lama()
-    thread = threading.Thread(target=model_tread, args=(test_data,model,client,output_path))
-    threads.append(thread)
-    thread.start()
-    
-    
-#main()
-#test()
+
 from scoring_program.task_evaluate import SAS,ExactMatch
 
 def evaluation(result_file_name):
+    
+
     results=pd.read_csv(result_file_name)
     #Answer,response
     #SAS(predicted_answers, reference_answers)
@@ -164,22 +167,25 @@ def evaluation(result_file_name):
     
     return sas,exact_match
 
-    
-output_path='results/Q&A_LLM/'
-models=["llama3-70b",
-            "mixtral-8x22b-instruct",
+if True:    
+    output_path='results/Q&A_LLM/'
+    models=["llama3-70b",
+            #"mixtral-8x22b-instruct",
             "gpt-3.5-turbo",
             "gpt-4-turbo",
             "llama3-8b",
-            "mixtral-8x7b-instruct",
-            "mistral-7b-instruct"]
+            #"mixtral-8x7b-instruct",
+            #"mistral-7b-instruct",
+            ]
+    for model in models:
+        print (f'testing {model}' )    
+        sas,exact_match= evaluation(output_path+f"{model}_model_prediction.csv")   
+        scores = [
+                        "SAS: %f\n" % sas,
+                        "ExactMatch: %f\n" % exact_match
+                    ]
 
-model=models[4]    
-sas,exact_match= evaluation(output_path+f"{model}_model_prediction.csv")   
-scores = [
-            "SAS: %f\n" % sas,
-            "ExactMatch: %f\n" % exact_match
-        ]
-
-for s in scores:
-            print(s, end='') 
+        for s in scores:
+                        print(s, end='') 
+#main()
+#test()

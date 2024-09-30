@@ -1,0 +1,5 @@
+ID                                                     3496.b
+Text        CSF increased in the year from £3.9 million to...
+Question     What does the current credit environment entail?
+Answer                                reduced customer demand
+Name: 77, dtype: object
