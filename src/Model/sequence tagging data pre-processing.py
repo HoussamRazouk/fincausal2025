@@ -1,5 +1,6 @@
 import pandas as pd
 from transformers import BertTokenizer
+import pickle
 
 def label_processing(tokenized_text,tokenized_Answer):
 
@@ -57,5 +58,9 @@ def main(file):
     ), axis=1)
 
     df.to_csv(f'data/processed_{file}.csv')
+    with open(f'data/processed_{file}.pkl', 'wb') as f:
+        # Use pickle.dump() to serialize the data
+        pickle.dump(df, f)
 
-main('reference_data_practise_en')
+#main('reference_data_practise_en')
+main('training_data_en')
