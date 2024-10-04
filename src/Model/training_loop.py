@@ -222,7 +222,10 @@ if __name__ == "__main__":
     if torch.cuda.is_available():
         device = torch.device("cuda")
         torch.backends.cuda.split_kernels_merge = True
-        torch.backends.cuda.max_split_size_mb = 7000  # Adjust this value based on your memory requirements
+        torch.backends.cuda.max_split_size_mb = 16000  # Adjust this value based on your memory requirements
+        logging.info("Using device: "+ str(device))
+        print("Using device: "+ str(device))
+
 
     else:
         device = torch.device("cpu")
