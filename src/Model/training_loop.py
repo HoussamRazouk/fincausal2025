@@ -121,7 +121,7 @@ def train(args,data,tokenizer):
 
                     for step, batch in enumerate(tqdm(val_dataloader, desc=f"Epoch {epoch + 1}/{num_epochs}", leave=False)):
                         
-                        text_input_ids,Question_input_ids,text_attention_mask,Question_attention_mask,labels
+                        
                         
                         text_input_ids,Question_input_ids,text_attention_mask,Question_attention_mask,labels = batch
                         
