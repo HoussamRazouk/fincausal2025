@@ -49,6 +49,8 @@ def train(args,data,tokenizer):
     for fold_num,random_state in enumerate(folds):
 
         logging.info(f"fold start {random_state},")
+        print(f"fold start {random_state},")
+        
 
         train_df,val_df =get_kfold_data(data,random_state=random_state)
         #train_df_processed=data_df_to_labeled_sequence(train_df)
@@ -71,6 +73,8 @@ def train(args,data,tokenizer):
         model=model.to(device)
         num_params = count_trainable_params(model)
         logging.info("Number of trainable parameters in the model: "+ str(num_params))
+        print("Number of trainable parameters in the model: "+ str(num_params))
+        
         # Optionally, you can load pre-trained weights if you have saved them previously
         
         # Set up optimizer and learning rate scheduler
@@ -108,6 +112,8 @@ def train(args,data,tokenizer):
                 
                 avg_loss = total_loss / len(train_dataloader)
                 logging.info(f"Epoch {epoch+1}/{num_epochs}, Average Loss: {avg_loss}")
+                print(f"Epoch {epoch+1}/{num_epochs}, Average Loss: {avg_loss}")
+                
 
 
             if True:### validation 
@@ -172,10 +178,17 @@ def train(args,data,tokenizer):
                     counter += 1
                     if counter >= patience:
                         logging.info(f"Early stopping triggered for fold {fold_num + 1}/{folds}")
+                        print(f"Early stopping triggered for fold {fold_num + 1}/{folds}")
+                        
                         break
         logging.info(f"fold ends {random_state},")
+        print(f"fold ends {random_state},")
+        
         logging.info(f"############################################")
-    logging.info(f"Done successfully")       
+        print(f"############################################")
+    logging.info(f"Done successfully")
+    print(f"Done successfully")       
+           
     
 if __name__ == "__main__":
 
@@ -211,6 +224,7 @@ if __name__ == "__main__":
     else:
         device = torch.device("cpu")
         logging.info("Using device: "+ str(device))
+        print("Using device: "+ str(device))
 
     #config=config_init()
 
