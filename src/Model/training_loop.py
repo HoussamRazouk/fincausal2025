@@ -39,6 +39,9 @@ def train(args,data,tokenizer):
     patience = 5
     num_epochs = 100
     num_labels=1
+    training_batch_size=16
+    test_batch_size=8
+    
 
     # Initialize variables to track the best model
 
@@ -59,10 +62,10 @@ def train(args,data,tokenizer):
         
 
         training_DS=SeqTagDataset(tokenizer,df=train_df)
-        train_dataloader=DataLoader(training_DS,batch_size=8,num_workers=2, shuffle=True,drop_last=True,pin_memory=True)
+        train_dataloader=DataLoader(training_DS,batch_size=training_batch_size,num_workers=2, shuffle=True,drop_last=True,pin_memory=True)
 
         val_DS=SeqTagDataset(tokenizer,df=val_df)
-        val_dataloader=DataLoader(val_DS,batch_size=2,num_workers=2, shuffle=False,drop_last=True,pin_memory=True)
+        val_dataloader=DataLoader(val_DS,batch_size=test_batch_size,num_workers=2, shuffle=False,drop_last=True,pin_memory=True)
 
 
         # Initialize your custom model
