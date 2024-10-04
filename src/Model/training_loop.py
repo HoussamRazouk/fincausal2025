@@ -231,13 +231,12 @@ if __name__ == "__main__":
     #data_path='data/row'
     
     #data=get_IFX_data(data_path, config,args.lm_name)
-    file='processed_reference_data_practise_en'
+    file='processed_training_data_en'
     #data=pd.read_csv(f'data/{file}.csv')
     with open(f'data/{file}.pkl', 'rb') as f:
     # Use pickle.load() to deserialize the data
         data = pickle.load(f)
-    
-    data['Labeled Text'][0][0]
+
     
     train(args,data,tokenizer)
     
