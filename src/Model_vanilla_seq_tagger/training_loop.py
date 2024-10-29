@@ -4,8 +4,10 @@ print("Current working directory:", os.getcwd())
 #import sys
 
 import sys
-sys.path.insert(0,'/home/fmea_a/jupyter-homes/fincausal')
+#sys.path.insert(0,'/home/fmea_a/jupyter-homes/fincausal')
 #sys.path.append('/home/fmea_a/jupyter-homes/fincausa')
+sys.path.append('.')
+
 #sys.path.insert(0, './src')
 import logging
 #src/Model_vanilla_seq_tagger/data_pre_processing.py
