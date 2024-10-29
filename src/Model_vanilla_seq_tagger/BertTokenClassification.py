@@ -25,7 +25,7 @@ class BertTokenClassification(nn.Module):
         
         ## get the embeddings of the text and the question 
         outputs = self.bert(token_ids,attention_mask=text_attention_mask)
-        print(outputs['last_hidden_state'])
+        #print(outputs['last_hidden_state'])
 
         #sequence_output = self.dropout(outputs)
         
