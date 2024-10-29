@@ -16,3 +16,12 @@ Firstly, leveraging Large Language Models (LLMs) and prompt engineering in a zer
 Secondly, utilizing Language Models (LMs) such as BERT to perform conditional sequence tagging, identifying the part of the text that answers the question. Specifically, this model is trained to predict whether a given token embedding, along with the question embedding, is part of the answer or not.
 
 
+
+
+to run the model follow run  
+
+python src/Model_vanilla_seq_tagger/training_loop.py 
+
+to run the evelauation 
+
+python src/Model_vanilla_seq_tagger/predict_example.py 
