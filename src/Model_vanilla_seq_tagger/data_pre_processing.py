@@ -92,6 +92,49 @@ def get_data(file,LM,output_file='Vanilla_seq_tagger', save=False):
     max_length=max(df['len Question and Text'])
     return df,max_length
 
+
+def get_test_data(file,LM,output_file='Vanilla_seq_tagger', save=False):
+    df=pd.read_csv(f'data/{file}.csv',sep=';')
+
+
+    # Load the BERT tokenizer (bert-base-uncased)
+    tokenizer = BertTokenizer.from_pretrained(LM)
+
+    ###
+    df['tokenized Text'] =df.apply(lambda row:  tokenizer.tokenize(
+        row['Text'],
+    ), axis=1)
+    
+    df['tokenized Question'] =df.apply(lambda row:  tokenizer.tokenize(
+        row['Question'],
+    ), axis=1)
+
+    df['len Question and Text'] =df.apply(lambda row: len (row['tokenized Question']) + len (row['tokenized Text']) + 3, ## considering the special tokens when added e.g. CLS SEP SEP
+                                           axis=1)    
+    if save:
+        df.to_csv(f'data/{output_file}_{LM}_{file}.csv')
+        with open(f'data/{output_file}_{LM}_{file}.pkl', 'wb') as f:
+            # Use pickle.dump() to serialize the data
+            pickle.dump(df, f)
+            
+    if 'Answer' in df.columns:
+        
+        df['tokenized Answer'] =df.apply(lambda row:  tokenizer.tokenize(
+            row['Answer'],
+        ), axis=1)
+        
+        df['Labeled Text'] =df.apply(lambda row:  label_processing(
+            row['tokenized Text'],
+            row['tokenized Answer'],
+        ), axis=1)
+        
+        df['BIO Labeled Text'] =df.apply(lambda row:  true_false_to_bio(
+            row['Labeled Text'],
+        ), axis=1)
+            
+    max_length=max(df['len Question and Text'])
+    return df,max_length
+
 #main('reference_data_practise_en')
 def test():
     File='training_data_en'

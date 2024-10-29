@@ -35,7 +35,7 @@ class Extractive_seq_tagger_Dataset(Dataset):
         Text_ids=self.tokenizer.convert_tokens_to_ids(Text)
         start_token_id=self.start_token_id
         separator_token_id=self.separator_token_id
-        pad_token_id=self.separator_token_id
+        pad_token_id=self.pad_token_id
 
         token_ids=start_token_id+Question_ids+separator_token_id+Text_ids+separator_token_id
         loss_attention_mask=[0]*(len(Question_ids)+2)+[1]*len(Text_ids)+[0] #[CLS][Q][SEP][T][SEP]

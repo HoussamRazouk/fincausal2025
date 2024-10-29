@@ -4,3 +4,4 @@ backup/*
 to ignore/*
 src/Model/trained_models/*
 src/Model_conditional_seq_tagger/trained_models/bert-base-cased/*
+src/Model_vanilla_seq_tagger/trained_models/bert-base-cased/*
