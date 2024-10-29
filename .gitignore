@@ -2,3 +2,5 @@ src/init.py
 src/play ground.py
 backup/*
 to ignore/*
+src/Model/trained_models/*
+src/Model_conditional_seq_tagger/trained_models/bert-base-cased/*

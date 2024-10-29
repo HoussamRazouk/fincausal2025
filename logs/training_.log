@@ -1,0 +1,3 @@
+2024-10-28 09:04:13,434 - INFO - Using device: cpu
+2024-10-28 09:04:18,158 - INFO - fold start 420,
+2024-10-28 09:04:18,647 - INFO - Number of trainable parameters in the model: 108312579

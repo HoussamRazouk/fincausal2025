@@ -33,7 +33,7 @@ def label_processing(tokenized_text,tokenized_Answer):
     return label    
 
 
-def main(file):
+def main(file,LM,output_file):
     df=pd.read_csv(f'data/{file}.csv',sep=';')
 
     df['the answer is in the text']=df.apply(lambda row: row['Answer'] in row['Text'], axis=1)## check if the answer is in the text 
@@ -41,7 +41,7 @@ def main(file):
     df=df[df['the answer is in the text']].reset_index(drop=True) ## remove the inconstant data 
 
     # Load the BERT tokenizer (bert-base-uncased)
-    tokenizer = BertTokenizer.from_pretrained('bert-base-cased')
+    tokenizer = BertTokenizer.from_pretrained(LM)
 
     ###
     df['tokenized text'] =df.apply(lambda row:  tokenizer.tokenize(
@@ -57,10 +57,14 @@ def main(file):
         row['tokenized Answer'],
     ), axis=1)
 
-    df.to_csv(f'data/processed_{file}.csv')
-    with open(f'data/processed_{file}.pkl', 'wb') as f:
+    df.to_csv(f'data/{output_file}_{file}.csv')
+    with open(f'data/{output_file}_{file}.pkl', 'wb') as f:
         # Use pickle.dump() to serialize the data
         pickle.dump(df, f)
 
 #main('reference_data_practise_en')
-main('training_data_en')
+
+File='training_data_en'
+LM='bert-base-cased'
+output_file='conditional_seq_tagger'
+main(File,LM,output_file)
