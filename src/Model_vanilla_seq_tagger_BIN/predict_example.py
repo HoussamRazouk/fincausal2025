@@ -77,7 +77,7 @@ def answer_from_tokens_and_labels(tokenizer,tokenized_Text,labels):
 
 def get_labels_occurrences(BIO_Labeled_Text):
     aggregated_tokens=[]
-    for item in Test_data['BIO Labeled Text']:
+    for item in BIO_Labeled_Text:
         
         aggregated_tokens=aggregated_tokens+item
         
@@ -114,14 +114,12 @@ def predict_an_example(row,tokenizer,model,max_length=512):
     
     label_to_index ={
             'O':0,
-            'B-Answer':1,
-            'I-Answer':2,
+            'Answer':1,
         }
     
     index_to_label ={
             0:'O',
-            1:'B-Answer',
-            2:'I-Answer',
+            1:'Answer',
         }
     
     
@@ -186,52 +184,77 @@ def predict_an_example(row,tokenizer,model,max_length=512):
 
 
 
-#def main():
+def main():
     
-config=init()
-LM_name='bert-base-cased'
-Testing_file=config['input_test_data_file']
+    config=init()
+    LM_name='bert-base-cased'
+    Testing_file=config['input_test_data_file']
 
-Test_data,Test_data_maxlength=get_test_data(Testing_file,LM_name)
-for max_length in config['max_length']: ## specify the max_length based on the training data
-        if Test_data_maxlength<max_length:
-            Test_data_maxlength=max_length
-            break
+    Test_data,Test_data_maxlength=get_test_data(Testing_file,LM_name)
+    for max_length in config['max_length']: ## specify the max_length based on the training data
+            if Test_data_maxlength<max_length:
+                Test_data_maxlength=max_length
+                break
 
-tokenizer = BertTokenizer.from_pretrained(LM_name)
+    tokenizer = BertTokenizer.from_pretrained(LM_name)
 
-Test_data['nuance_Answer']=Test_data.apply(lambda row: tokenizer.convert_tokens_to_string(row['tokenized Answer']), axis=1)
-
-
-occurrences=get_labels_occurrences(Test_data['BIO Labeled Text'])
-
-Test_data['Random BIO Labels']=Test_data.apply(lambda row: generate_random_annotations(occurrences,row['tokenized Text']), axis=1)
-
-Test_data['Random Answer']=Test_data.apply(lambda row: answer_from_tokens_and_labels(tokenizer,
-                                                                                     row['tokenized Text'],
-                                                                                     row['Random BIO Labels']), axis=1)
+    Test_data['nuance_Answer']=Test_data.apply(lambda row: tokenizer.convert_tokens_to_string(row['tokenized Answer']), axis=1)
 
 
-for fold in config['folds']:
-    
-    model_weights=f"src/Model_vanilla_seq_tagger_BIN/trained_models/bert-base-cased_BIO/bert-base-cased_{fold}_model.pth"
-    #src/Model_vanilla_seq_tagger_BIN/trained_models/bert-base-cased_BIO/bert-base-cased_420_model .pth
-    model=torch.load(model_weights,map_location=torch.device('cpu') )
-    model.eval()
+    occurrences=get_labels_occurrences(Test_data['BIO Labeled Text'])
 
-    Test_data['predicted_Answer']=Test_data.apply(lambda row: predict_an_example(row,tokenizer,model,max_length=512), axis=1)
+    Test_data['Random BIO Labels']=Test_data.apply(lambda row: generate_random_annotations(occurrences,row['tokenized Text']), axis=1)
 
+    Test_data['Random Answer']=Test_data.apply(lambda row: answer_from_tokens_and_labels(tokenizer,
+                                                                                        row['tokenized Text'],
+                                                                                        row['Random BIO Labels']), axis=1)
 
 
-    sas=SAS(Test_data['predicted_Answer'], Test_data['Answer'])  
-    exact_match=ExactMatch(Test_data['predicted_Answer'], Test_data['Answer']) 
+    for fold in config['folds']:
+        
+        model_weights=f"src/Model_vanilla_seq_tagger_BIN/trained_models/bert-base-cased_BIN/bert-base-cased_{fold}_model.pth"
+        #src/Model_vanilla_seq_tagger_BIN/trained_models/bert-base-cased_BIO/bert-base-cased_420_model .pth
+        model=torch.load(model_weights,map_location=torch.device('cpu') )
+        model.eval()
+
+        Test_data['predicted_Answer']=Test_data.apply(lambda row: predict_an_example(row,tokenizer,model,max_length=512), axis=1)
 
 
-    sas_fair=SAS(Test_data['predicted_Answer'], Test_data['nuance_Answer'])  
-    exact_match_fair=ExactMatch(Test_data['predicted_Answer'], Test_data['nuance_Answer'])
-    
-    print(f"######### Fold: {fold} #########")
-    
+
+        sas=SAS(Test_data['predicted_Answer'], Test_data['Answer'])  
+        exact_match=ExactMatch(Test_data['predicted_Answer'], Test_data['Answer']) 
+
+
+        sas_fair=SAS(Test_data['predicted_Answer'], Test_data['nuance_Answer'])  
+        exact_match_fair=ExactMatch(Test_data['predicted_Answer'], Test_data['nuance_Answer'])
+        
+        print(f"######### Fold: {fold} #########")
+        
+        print("SAS achieved")
+        print(sas)
+
+        print("Exact match achieved")
+        print(exact_match)
+
+
+        print("SAS achieved fair")
+        print(sas_fair)
+
+        print("Exact match achieved fair")
+        print(exact_match_fair)
+
+
+    max_sas=SAS(Test_data['nuance_Answer'], Test_data['Answer']) 
+
+    max_exact_match=ExactMatch(Test_data['nuance_Answer'], Test_data['Answer']) 
+
+
+    random_sas=SAS(Test_data['Random Answer'], Test_data['Answer'])  
+    random_exact_match=ExactMatch(Test_data['Random Answer'], Test_data['Answer']) 
+
+
+
+    ##TODO 
     print("SAS achieved")
     print(sas)
 
@@ -246,40 +269,17 @@ for fold in config['folds']:
     print(exact_match_fair)
 
 
-max_sas=SAS(Test_data['nuance_Answer'], Test_data['Answer']) 
+    print("MAX SAS")
+    print(max_sas)
 
-max_exact_match=ExactMatch(Test_data['nuance_Answer'], Test_data['Answer']) 
-
-
-random_sas=SAS(Test_data['Random Answer'], Test_data['Answer'])  
-random_exact_match=ExactMatch(Test_data['Random Answer'], Test_data['Answer']) 
+    print("MAX Exact match")
+    print(max_exact_match)
 
 
+    print("Random SAS")
+    print(random_sas)
 
-##TODO 
-print("SAS achieved")
-print(sas)
-
-print("Exact match achieved")
-print(exact_match)
-
-
-print("SAS achieved fair")
-print(sas_fair)
-
-print("Exact match achieved fair")
-print(exact_match_fair)
-
-
-print("MAX SAS")
-print(max_sas)
-
-print("MAX Exact match")
-print(max_exact_match)
-
-
-print("Random SAS")
-print(random_sas)
-
-print("Random_exact_match")
-print(random_exact_match)
+    print("Random_exact_match")
+    print(random_exact_match)
+    
+main()

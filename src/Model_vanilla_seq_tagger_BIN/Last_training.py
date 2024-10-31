@@ -210,7 +210,7 @@ def train(config):
                         print("Directory ", directory, " already exists.")
 
                     #torch.save(model, 'src/Model_vanilla_seq_tagger_BIN/trained_models/'+LM_name.split('/')[-1]+'/'+LM_name.split('/')[-1]+'_'+str(random_state)+'_model.pth')
-                    torch.save(model, 'src/Model_vanilla_seq_tagger_BIN/trained_models/'+LM_name.split('/')[-1]+'_BIO'+'/'+LM_name.split('/')[-1]+'_'+"Last training"+'_model.pth')
+                    torch.save(model, 'src/Model_vanilla_seq_tagger_BIN/trained_models/'+LM_name.split('/')[-1]+'_BIN'+'/'+LM_name.split('/')[-1]+'_'+"Last training"+'_model.pth')
                     
 
                     counter = 0
