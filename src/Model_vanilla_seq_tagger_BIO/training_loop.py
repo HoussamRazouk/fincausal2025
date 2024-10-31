@@ -1,28 +1,17 @@
 
 import os
 print("Current working directory:", os.getcwd())
-#import sys
+
 
 import sys
-#sys.path.insert(0,'/home/fmea_a/jupyter-homes/fincausal')
-#sys.path.append('/home/fmea_a/jupyter-homes/fincausa')
 sys.path.append('.')
 
 #sys.path.insert(0, './src')
-import logging
-#src/Model_vanilla_seq_tagger/data_pre_processing.py
+
 from src.Model_vanilla_seq_tagger_BIO.data_pre_processing import get_data
 from src.Model_vanilla_seq_tagger_BIO.config import init
 from sklearn.model_selection import train_test_split
 from src.Model_vanilla_seq_tagger_BIO.Extractive_seq_tagger_Dataset import Extractive_seq_tagger_Dataset
-
-
-
-
-#from src.Model.training_helpers.get_kfold_data import get_kfold_data
-
-#from src.Model.training_helpers.get_kfold_data import get_kfold_data
-#from src.Model.training_helpers.SeqTagDataset import Extractive_seq_tagger_Dataset
 from src.Model_vanilla_seq_tagger_BIO.BertTokenClassification import BertTokenClassification
 
 import torch
@@ -34,7 +23,7 @@ import os
 import argparse
 import pandas as pd
 import pickle
- 
+import logging
 
 
 
@@ -161,8 +150,7 @@ def train(config):
             if True:### validation 
 
                 model.eval()
-                #all_targets = []
-                #all_predictions = []
+
                 total_eval_loss = 0
 
                 with torch.no_grad():
@@ -180,20 +168,9 @@ def train(config):
                         
                         loss = outputs[0]
 
-                        #print (outputs[1])
-
                         total_eval_loss += loss.item()
 
 
-                        #predicted_labels = (outputs[1][0] > 0.5).int()
-
-                        #all_targets.extend(labels.view(-1, num_labels).tolist()[:len(predicted_labels.tolist())])
-                        #all_predictions.extend(predicted_labels.tolist())
-
-
-                #all_targets = torch.tensor(all_targets, dtype=torch.float32)
-                
-                #all_predictions = torch.tensor(all_predictions, dtype=torch.float32)
                 
 
                 val_loss = total_eval_loss / len(val_dataloader)        
@@ -266,16 +243,6 @@ if __name__ == "__main__":
         #logging.info("Using device: "+ str(device))
         print("Using device: "+ str(device))
 
-    #config=config_init()
-
-    #data_path='data/row'
-    
-    #data=get_IFX_data(data_path, config,args.lm_name)
-    #file='processed_training_data_en'
-    #data=pd.read_csv(f'data/{file}.csv')
-    #with open(f'data/{file}.pkl', 'rb') as f:
-    # Use pickle.load() to deserialize the data
-    #    data = pickle.load(f)
     config=init()
     
     train(config)

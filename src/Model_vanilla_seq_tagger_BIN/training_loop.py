@@ -1,28 +1,15 @@
 
 import os
 print("Current working directory:", os.getcwd())
-#import sys
-
 import sys
-#sys.path.insert(0,'/home/fmea_a/jupyter-homes/fincausal')
-#sys.path.append('/home/fmea_a/jupyter-homes/fincausa')
 sys.path.append('.')
 
-#sys.path.insert(0, './src')
 import logging
-#src/Model_vanilla_seq_tagger/data_pre_processing.py
+
 from src.Model_vanilla_seq_tagger_BIN.data_pre_processing import get_data
 from src.Model_vanilla_seq_tagger_BIN.config import init
 from sklearn.model_selection import train_test_split
 from src.Model_vanilla_seq_tagger_BIN.Extractive_seq_tagger_Dataset import Extractive_seq_tagger_Dataset
-
-
-
-
-#from src.Model.training_helpers.get_kfold_data import get_kfold_data
-
-#from src.Model.training_helpers.get_kfold_data import get_kfold_data
-#from src.Model.training_helpers.SeqTagDataset import Extractive_seq_tagger_Dataset
 from src.Model_vanilla_seq_tagger_BIN.BertTokenClassification import BertTokenClassification
 
 import torch
@@ -31,9 +18,7 @@ import torch.optim as optim
 from tqdm import tqdm 
 from transformers import BertTokenizer
 import os
-import argparse
 import pandas as pd
-import pickle
  
 
 
@@ -118,7 +103,6 @@ def train(config):
         #logging.info("Number of trainable parameters in the model: "+ str(num_params))
         print("Number of trainable parameters in the model: "+ str(num_params))
         
-        # Optionally, you can load pre-trained weights if you have saved them previously
         
         # Set up optimizer and learning rate scheduler
         optimizer = optim.AdamW(model.parameters(), lr=2e-5)
@@ -161,8 +145,6 @@ def train(config):
             if True:### validation 
 
                 model.eval()
-                #all_targets = []
-                #all_predictions = []
                 total_eval_loss = 0
 
                 with torch.no_grad():
@@ -180,20 +162,10 @@ def train(config):
                         
                         loss = outputs[0]
 
-                        #print (outputs[1])
 
                         total_eval_loss += loss.item()
 
 
-                        #predicted_labels = (outputs[1][0] > 0.5).int()
-
-                        #all_targets.extend(labels.view(-1, num_labels).tolist()[:len(predicted_labels.tolist())])
-                        #all_predictions.extend(predicted_labels.tolist())
-
-
-                #all_targets = torch.tensor(all_targets, dtype=torch.float32)
-                
-                #all_predictions = torch.tensor(all_predictions, dtype=torch.float32)
                 
 
                 val_loss = total_eval_loss / len(val_dataloader)        
@@ -201,14 +173,14 @@ def train(config):
                 if val_loss < best_loss - min_delta:
                     best_loss = val_loss
                     # Create target Directory if it doesn't exist
-                    directory='src/Model_vanilla_seq_tagger_BIN/trained_models/'+LM_name.split('/')[-1]
+                    directory='src/Model_vanilla_seq_tagger_BIN/trained_models/'+LM_name.split('/')[-1]+'_BIN'
                     if not os.path.exists(directory):
                         os.mkdir(directory)
                         print("Directory ", directory, " created.")
                     else:
                         print("Directory ", directory, " already exists.")
 
-                    torch.save(model, 'src/Model_vanilla_seq_tagger_BIN/trained_models/'+LM_name.split('/')[-1]+'/'+LM_name.split('/')[-1]+'_'+str(random_state)+'_model.pth')
+                    torch.save(model, 'src/Model_vanilla_seq_tagger_BIN/trained_models/'+LM_name.split('/')[-1]+'_BIN'+'/'+LM_name.split('/')[-1]+'_'+str(random_state)+'_model.pth')
 
                     counter = 0
                 else:
