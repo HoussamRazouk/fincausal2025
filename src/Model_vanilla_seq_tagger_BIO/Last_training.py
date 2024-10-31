@@ -10,11 +10,11 @@ sys.path.append('.')
 
 #sys.path.insert(0, './src')
 import logging
-#src/Model_vanilla_seq_tagger/data_pre_processing.py
-from src.Model_vanilla_seq_tagger.data_pre_processing import get_data
-from src.Model_vanilla_seq_tagger.config import init
+#src/Model_vanilla_seq_tagger_BIO/data_pre_processing.py
+from src.Model_vanilla_seq_tagger_BIO.data_pre_processing import get_data
+from src.Model_vanilla_seq_tagger_BIO.config import init
 from sklearn.model_selection import train_test_split
-from src.Model_vanilla_seq_tagger.Extractive_seq_tagger_Dataset import Extractive_seq_tagger_Dataset
+from src.Model_vanilla_seq_tagger_BIO.Extractive_seq_tagger_Dataset import Extractive_seq_tagger_Dataset
 
 
 
@@ -23,7 +23,7 @@ from src.Model_vanilla_seq_tagger.Extractive_seq_tagger_Dataset import Extractiv
 
 #from src.Model.training_helpers.get_kfold_data import get_kfold_data
 #from src.Model.training_helpers.SeqTagDataset import Extractive_seq_tagger_Dataset
-from src.Model_vanilla_seq_tagger.BertTokenClassification import BertTokenClassification
+from src.Model_vanilla_seq_tagger_BIO.BertTokenClassification import BertTokenClassification
 
 import torch
 from torch.utils.data import DataLoader
@@ -202,15 +202,15 @@ def train(config):
                 if val_loss < best_loss - min_delta:
                     best_loss = val_loss
                     # Create target Directory if it doesn't exist
-                    directory='src/Model_vanilla_seq_tagger/trained_models/'+LM_name.split('/')[-1]
+                    directory='src/Model_vanilla_seq_tagger_BIO/trained_models/'+LM_name.split('/')[-1]
                     if not os.path.exists(directory):
                         os.mkdir(directory)
                         print("Directory ", directory, " created.")
                     else:
                         print("Directory ", directory, " already exists.")
 
-                    #torch.save(model, 'src/Model_vanilla_seq_tagger/trained_models/'+LM_name.split('/')[-1]+'/'+LM_name.split('/')[-1]+'_'+str(random_state)+'_model.pth')
-                    torch.save(model, 'src/Model_vanilla_seq_tagger/trained_models/'+LM_name.split('/')[-1]+'_BIO'+'/'+LM_name.split('/')[-1]+'_'+"Last training"+'_model.pth')
+                    #torch.save(model, 'src/Model_vanilla_seq_tagger_BIO/trained_models/'+LM_name.split('/')[-1]+'/'+LM_name.split('/')[-1]+'_'+str(random_state)+'_model.pth')
+                    torch.save(model, 'src/Model_vanilla_seq_tagger_BIO/trained_models/'+LM_name.split('/')[-1]+'_BIO'+'/'+LM_name.split('/')[-1]+'_'+"Last training"+'_model.pth')
                     
 
                     counter = 0

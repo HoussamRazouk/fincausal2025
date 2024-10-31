@@ -5,8 +5,8 @@ import torch
 import torch.nn as nn
 from transformers import BertTokenizer
 import pickle
-from src.Model_vanilla_seq_tagger.config import init
-from src.Model_vanilla_seq_tagger.data_pre_processing import get_test_data
+from src.Model_vanilla_seq_tagger_BIO.config import init
+from src.Model_vanilla_seq_tagger_BIO.data_pre_processing import get_test_data
 # Load the model state
 from scoring_program.task_evaluate import SAS,ExactMatch
 import random
@@ -214,8 +214,8 @@ Test_data['Random Answer']=Test_data.apply(lambda row: answer_from_tokens_and_la
 
 for fold in config['folds']:
     
-    model_weights=f"src/Model_vanilla_seq_tagger/trained_models/bert-base-cased_BIO/bert-base-cased_{fold}_model.pth"
-    #src/Model_vanilla_seq_tagger/trained_models/bert-base-cased_BIO/bert-base-cased_420_model .pth
+    model_weights=f"src/Model_vanilla_seq_tagger_BIO/trained_models/bert-base-cased_BIO/bert-base-cased_{fold}_model.pth"
+    #src/Model_vanilla_seq_tagger_BIO/trained_models/bert-base-cased_BIO/bert-base-cased_420_model .pth
     model=torch.load(model_weights,map_location=torch.device('cpu') )
     model.eval()
 
