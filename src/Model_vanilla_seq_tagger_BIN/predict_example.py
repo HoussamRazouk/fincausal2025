@@ -22,7 +22,7 @@ def answer_from_tokens_and_labels(tokenizer,tokenized_Text,labels):
     words=Text.split(' ')
 
     ['some', 'stuff', 'which', 'doesn', "'", 't', 'matter', '.']
-    labels=['O', 'O', 'O', 'O', "'", 'I', 'I', 'O']
+    labels=['O', 'O', 'O', 'O', "I", 'I', 'I', 'O']
 
 
     words

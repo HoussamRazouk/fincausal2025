@@ -1,4 +1,4 @@
-from src.Model_vanilla_seq_tagger_BIN.predict_example import predict_an_example
+
 
 import sys
 sys.path.append('.')
