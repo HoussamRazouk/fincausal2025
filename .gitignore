@@ -1,7 +1,8 @@
-src/init.py
+src/LLM_zeor_shot/init.py
 src/play ground.py
 backup/*
 to ignore/*
 src/Model/trained_models/*
 src/Model_conditional_seq_tagger/trained_models/bert-base-cased/*
 src/Model_vanilla_seq_tagger_BIO/trained_models/bert-base-cased_BIO/bert-base-cased_*
+src/Model_vanilla_seq_tagger_BIN/trained_models/bert-base-cased_BIN/bert-base-cased_*
