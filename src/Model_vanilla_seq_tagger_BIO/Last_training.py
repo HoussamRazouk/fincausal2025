@@ -50,7 +50,7 @@ def train(config):
     
     LM_name=config['LM']
     Training_file=config['input_train_data_file']
-    Testing_file=config['input_test_data_file']
+    Validation=config['input_test_data_file']
     
     
     tokenizer = BertTokenizer.from_pretrained(LM_name)
@@ -63,11 +63,11 @@ def train(config):
             break
         
     
-    Testing_data,Testing_data_maxlength=get_data(Testing_file,LM_name)
+    Validation_data,Validation_data_maxlength=get_data(Validation,LM_name)
     
     for max_length in config['max_length']: ## specify the max_length based on the training data
-        if Testing_data_maxlength<max_length:
-            Testing_data_maxlength=max_length
+        if Validation_data_maxlength<max_length:
+            Validation_data_maxlength=max_length
             break
     
     # Set the number of training epochs
@@ -86,25 +86,26 @@ def train(config):
     # Initialize variables to track the best model
 
 
-    folds=[420,200,100,150,24]
+    #folds=config['folds']
 
     
-    for fold_num,random_state in enumerate(folds):
+    #for fold_num,random_state in enumerate(folds):
+    if True:
 
         #logging.info(f"fold start {random_state},")
         #print(f"fold start {random_state},")
         
 
-        train_df, val_df =train_test_split(Training_data,test_size=0.2, random_state=random_state)
-        train_df=train_df.reset_index(drop=True)
-        val_df=val_df.reset_index(drop=True)
+        #train_df, val_df =train_test_split(Training_data,test_size=0.2, random_state=random_state)
+        #train_df=train_df.reset_index(drop=True)
+        #val_df=val_df.reset_index(drop=True)
 
         
 
-        training_DS=Extractive_seq_tagger_Dataset(tokenizer,data=train_df,max_length=Training_data_maxlength)
+        training_DS=Extractive_seq_tagger_Dataset(tokenizer,data=Training_data,max_length=Training_data_maxlength)
         train_dataloader=DataLoader(training_DS,batch_size=training_batch_size,num_workers=2, shuffle=True,drop_last=True,pin_memory=True)
 
-        val_DS=Extractive_seq_tagger_Dataset(tokenizer,data=val_df,max_length=Training_data_maxlength)
+        val_DS=Extractive_seq_tagger_Dataset(tokenizer,data=Validation_data,max_length=Training_data_maxlength)
         val_dataloader=DataLoader(val_DS,batch_size=val_batch_size,num_workers=2, shuffle=False,drop_last=True,pin_memory=True)
 
 
@@ -208,18 +209,20 @@ def train(config):
                     else:
                         print("Directory ", directory, " already exists.")
 
-                    torch.save(model, 'src/Model_vanilla_seq_tagger/trained_models/'+LM_name.split('/')[-1]+'/'+LM_name.split('/')[-1]+'_'+str(random_state)+'_model.pth')
+                    #torch.save(model, 'src/Model_vanilla_seq_tagger/trained_models/'+LM_name.split('/')[-1]+'/'+LM_name.split('/')[-1]+'_'+str(random_state)+'_model.pth')
+                    torch.save(model, 'src/Model_vanilla_seq_tagger/trained_models/'+LM_name.split('/')[-1]+'_BIO'+'/'+LM_name.split('/')[-1]+'_'+"Last training"+'_model.pth')
+                    
 
                     counter = 0
                 else:
                     counter += 1
                     if counter >= patience:
                         #logging.info(f"Early stopping triggered for fold {fold_num + 1}/{folds}")
-                        print("Early stopping triggered for fold "+str(fold_num + 1)+"/"+str(folds))
+                        print("Early stopping triggered for fold "+'Last training'+"/"+str(folds))
                         
                         break
         #logging.info(f"fold ends {random_state},")
-        print("fold ends" +str(random_state)+",")
+        print("fold ends" +'Last training'+",")
         
         #logging.info(f"############################################")
         print("############################################")
