@@ -49,7 +49,7 @@ def true_false_to_bio(labels):
 
 
 def get_data(file,LM,output_file='Vanilla_seq_tagger', save=False):
-    df=pd.read_csv(f'data/{file}.csv',sep=';')
+    df=pd.read_csv(f'data/{file}.csv',sep=';',encoding='utf-8')
 
     df['the answer is in the text']=df.apply(lambda row: row['Answer'] in row['Text'], axis=1)## check if the answer is in the text 
 
@@ -94,7 +94,7 @@ def get_data(file,LM,output_file='Vanilla_seq_tagger', save=False):
 
 
 def get_test_data(file,LM,output_file='Vanilla_seq_tagger', save=False):
-    df=pd.read_csv(f'data/{file}.csv',sep=';')
+    df=pd.read_csv(f'data/{file}.csv',sep=';',encoding='utf-8')
 
 
     # Load the BERT tokenizer (bert-base-uncased)

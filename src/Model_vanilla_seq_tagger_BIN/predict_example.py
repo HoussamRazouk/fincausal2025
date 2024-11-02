@@ -12,8 +12,8 @@ from scoring_program.task_evaluate import SAS,ExactMatch
 import random
 
 
-#def answer_from_tokens_and_labels(tokenizer,Text,labels):
-def answer_from_tokens_and_labels(tokenizer,tokenized_Text,labels):
+def answer_from_tokens_and_labels_advanced(tokenizer,Text,labels):
+
     
     #### need to handel errors by the tokenizer
     '''
@@ -47,7 +47,7 @@ def answer_from_tokens_and_labels(tokenizer,tokenized_Text,labels):
     
     Answer=Answer.strip()
     '''
-    '''
+    
     Text=Text.strip()
     words=Text.split(' ')
     tokenized_words=[]
@@ -58,22 +58,33 @@ def answer_from_tokens_and_labels(tokenizer,tokenized_Text,labels):
     Answer=''
     for word in words:
         Flag=False
-        
+        detected_word=''
         for token in tokenized_words[Word_IDX]:
             
             if labels[label_IDX]!='O':
                 Flag=True
+                if '##' in token[:2]:
+                    token=token[2:]
+                detected_word=detected_word+token
             label_IDX=label_IDX+1
         if Flag: 
-            Answer=Answer+' '+word
+            Answer=Answer+' '+detected_word
         Word_IDX=Word_IDX+1
     
-    Answer=Answer.strip()'''
+    Answer=Answer.strip()
+    
+    #tokenized_answer= [token for token, entity in zip(tokenized_Text, labels) if entity != 'O']
+    
+    #Answer=tokenizer.convert_tokens_to_string(tokenized_answer)
+    return Answer
+
+def answer_from_tokens_and_labels(tokenizer,tokenized_Text,labels):
     
     tokenized_answer= [token for token, entity in zip(tokenized_Text, labels) if entity != 'O']
     
     Answer=tokenizer.convert_tokens_to_string(tokenized_answer)
     return Answer
+
 
 def get_labels_occurrences(BIO_Labeled_Text):
     aggregated_tokens=[]
@@ -83,7 +94,7 @@ def get_labels_occurrences(BIO_Labeled_Text):
         
     aggregated_tokens
 
-    annotations= ['O', 'B-Answer', 'I-Answer']
+    annotations= ['O', 'Answer']
     occurrences={}
     for annotation in annotations:
         occurrences[annotation]=0
@@ -171,20 +182,22 @@ def predict_an_example(row,tokenizer,model,max_length=512):
         else:
             labels.append(index_to_label[processed_output[idx]])
             
-    predicted_answer= answer_from_tokens_and_labels(tokenizer,row['tokenized Text'], labels)        
+    predicted_answer= answer_from_tokens_and_labels(tokenizer,row['tokenized Text'], labels)
+    predicted_answer_advanced= answer_from_tokens_and_labels_advanced(tokenizer,row['Text'], labels)    
+        
             
     #tokenized_answer= [token for token, entity in zip(row['tokenized Text'], labels) if entity != 'O']
     
     #predicted_answer=tokenizer.convert_tokens_to_string(tokenized_answer)
             
             
-    return predicted_answer 
+    return [predicted_answer,predicted_answer_advanced] 
     
 
 
 
 
-def main():
+def main(Folds=None):
     
     config=init()
     LM_name='bert-base-cased'
@@ -208,21 +221,33 @@ def main():
     Test_data['Random Answer']=Test_data.apply(lambda row: answer_from_tokens_and_labels(tokenizer,
                                                                                         row['tokenized Text'],
                                                                                         row['Random BIO Labels']), axis=1)
+    
+    
+    
+    if Folds==None:
+        Folds=config['folds']
 
-
-    for fold in config['folds']:
+    for fold in Folds:
         
         model_weights=f"src/Model_vanilla_seq_tagger_BIN/trained_models/bert-base-cased_BIN/bert-base-cased_{fold}_model.pth"
         #src/Model_vanilla_seq_tagger_BIN/trained_models/bert-base-cased_BIO/bert-base-cased_420_model .pth
         model=torch.load(model_weights,map_location=torch.device('cpu') )
         model.eval()
 
-        Test_data['predicted_Answer']=Test_data.apply(lambda row: predict_an_example(row,tokenizer,model,max_length=512), axis=1)
+        Test_data['Predicted_Answer_and_Predicted_Answer_advanced']=Test_data.apply(lambda row: predict_an_example(row,tokenizer,model,max_length=512), axis=1)
+        Test_data['predicted_Answer']=Test_data.apply(lambda row: row['Predicted_Answer_and_Predicted_Answer_advanced'][0], axis=1)
+        Test_data['Predicted_Answer_advanced']=Test_data.apply(lambda row: row['Predicted_Answer_and_Predicted_Answer_advanced'][1], axis=1)
+        
+        
+        
 
 
 
         sas=SAS(Test_data['predicted_Answer'], Test_data['Answer'])  
         exact_match=ExactMatch(Test_data['predicted_Answer'], Test_data['Answer']) 
+        
+        sas_advanced=SAS(Test_data['Predicted_Answer_advanced'], Test_data['Answer'])  
+        exact_match_advanced=ExactMatch(Test_data['Predicted_Answer_advanced'], Test_data['Answer']) 
 
 
         sas_fair=SAS(Test_data['predicted_Answer'], Test_data['nuance_Answer'])  
@@ -235,6 +260,12 @@ def main():
 
         print("Exact match achieved")
         print(exact_match)
+        
+        print("SAS advanced achieved")
+        print(sas_advanced)
+
+        print("Exact match advanced achieved")
+        print(exact_match_advanced)
 
 
         print("SAS achieved fair")
@@ -255,18 +286,6 @@ def main():
 
 
     ##TODO 
-    print("SAS achieved")
-    print(sas)
-
-    print("Exact match achieved")
-    print(exact_match)
-
-
-    print("SAS achieved fair")
-    print(sas_fair)
-
-    print("Exact match achieved fair")
-    print(exact_match_fair)
 
 
     print("MAX SAS")
@@ -281,5 +300,38 @@ def main():
 
     print("Random_exact_match")
     print(random_exact_match)
+    return Test_data
     
-main()
+#data= main([200])
+
+#main()
+'''
+from transformers import BertTokenizer
+
+Text="some stuff  whichasda doesn't matter."
+tokenizer = BertTokenizer.from_pretrained('bert-base-cased')
+
+tokenizer.tokenize(Text)
+
+if '##' in'##as'[:2]:
+    '##as'[2:]
+Text=Text.strip()
+words=Text.split(' ')
+'''
+
+
+
+#def tokenization_check(row):
+#    Flag=False
+#    if row['predicted_Answer']==row['nuance_Answer']:
+#        if row['Predicted_Answer_advanced']!=row['Answer']:
+#            Flag=True
+    
+#    return Flag
+
+
+#data['tokenization_check']=data.apply(lambda row: tokenization_check(row), axis=1)
+
+
+#data[data['tokenization_check']].iloc[1]['Predicted_Answer_advanced']
+#data[data['tokenization_check']].iloc[1]['Answer']
