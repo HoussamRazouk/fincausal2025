@@ -16,7 +16,7 @@ import random
 
 config=init()
 LM_name='bert-base-cased'
-Testing_file='input_data_evaluation_en'
+Testing_file='reference_data_practice_en'
 
 Test_data,Test_data_maxlength=get_test_data(Testing_file,LM_name)
 for max_length in config['max_length']: ## specify the max_length based on the training data
@@ -34,5 +34,5 @@ model.eval()
 Test_data['Answer']=Test_data.apply(lambda row: predict_an_example(row,tokenizer,model,max_length=512), axis=1)
 Test_data['Answer']=Test_data.apply(lambda row: row['Answer'][1], axis=1)
 
-Test_data[['ID','Text','Question','Answer']].to_csv('data/input_data_evaluation_en_bert-base-cased_BIN_annotation.csv',index=False)
+Test_data[['ID','Text','Question','Answer']].to_csv('data/input_data_evaluation_en_bert-base-cased_BIN_annotation_test.csv',index=False,sep=';')
 

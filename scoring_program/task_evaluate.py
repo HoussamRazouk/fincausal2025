@@ -49,6 +49,7 @@ Usage 2: File mode
 
 import os
 import sys
+sys.path.append('.')
 import csv
 import argparse
 import logging
@@ -242,7 +243,7 @@ def main():
                                  help='path to output score file (or stdout if not provided)')
 
     logging.basicConfig(level=logging.INFO,
-                        filename=None,
+                        filename='test.log',
                         format='%(levelname)-7s| %(message)s')
 
     args = parser.parse_args()
@@ -256,3 +257,4 @@ def main():
 if __name__ == '__main__':
     main()
 
+ #python scoring_program/task_evaluate.py from-file  data/input_data_evaluation_en_bert-base-cased_BIN_annotation_corrected.csv  data/input_data_evaluation_en_bert-base-cased_BIN_annotation_corrected.csv
