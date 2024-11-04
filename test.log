@@ -1418,3 +1418,1007 @@ INFO   | * Loading reference data
 INFO   | * Loading prediction data
 INFO   | Load Data: check data set length = True
 INFO   | Load Data: check data set ref. context = True
+INFO   | Gold file: data/input_data_evaluation_en_bert-base-cased_BIN_annotation_corrected.csv
+INFO   | Gold: ID;Text;Question;Answer
+INFO   | Gold: 2759;The fees of the non-execu
+INFO   | Gold: 2259.a;The Directors believe t
+INFO   | Gold: 2123.a;Owing to the Company's 
+INFO   | Gold: 1882.b;Underlying Group EBITDA
+INFO   | Gold: 1117;No further disclosure is 
+INFO   | Gold: 6120;The market in closed-end 
+INFO   | Gold: 5146;The Group retains an owne
+INFO   | Gold: 1994;The Group's business is s
+INFO   | Gold: 2790.a;LTL's relative underper
+INFO   | Gold: 1849.a;The Group provides a br
+INFO   | Gold: 1876;2017 summary > Revenue im
+INFO   | Gold: 1792.b;The Company is not with
+INFO   | Gold: 3173;2 Based on the cash retur
+INFO   | Gold: 2018.a;Reduced number of activ
+INFO   | Gold: 2712;Our simplification journe
+INFO   | Gold: 2880;Based on their assessment
+INFO   | Gold: 925.b;Due to the size and comp
+INFO   | Gold: 2046;This result illustrates h
+INFO   | Gold: 3024.a;The reduction in the ra
+INFO   | Gold: 5234;Following the poor perfor
+INFO   | Gold: 5055.b;We believe that it is c
+INFO   | Gold: 5091.2.b;At present, the metho
+INFO   | Gold: 5007.2.a;In accordance with th
+INFO   | Gold: 993;The Remuneration Committee
+INFO   | Gold: 3029;Following several postpon
+INFO   | Gold: 5413;The restructuring proposa
+INFO   | Gold: 6050;The Directors are able to
+INFO   | Gold: 1635;The Company incurs signif
+INFO   | Gold: 2358;Earnings per share As a r
+INFO   | Gold: 2946;Macadamia production in 2
+INFO   | Gold: 3929;The value of each Incenti
+INFO   | Gold: 5031.a;We need to have an orga
+INFO   | Gold: 4147.b;Portfolio performance r
+INFO   | Gold: 1025;Alternative performance m
+INFO   | Gold: 5231;Towards the end of 2016, 
+INFO   | Gold: 1599;Due to the modest size of
+INFO   | Gold: 3641;The Board has assessed it
+INFO   | Gold: 3903;The financial year being 
+INFO   | Gold: 1024;In addition, the Group al
+INFO   | Gold: 2542;The European schemes defi
+INFO   | Gold: 806;As a result, revenue was t
+INFO   | Gold: 5127;Approved LTIP awards enab
+INFO   | Gold: 3030;The index grew by 8.6% on
+INFO   | Gold: 5171.1.a;The oil distribution 
+INFO   | Gold: 2054;There are a number of ris
+INFO   | Gold: 3994;The Directors, having mad
+INFO   | Gold: 6111;Destruction rates were sl
+INFO   | Gold: 5471.b;Due to timing of the 20
+INFO   | Gold: 3004;The Audit and Risk Commit
+INFO   | Gold: 2489;As a result of the Group'
+INFO   | Gold: 5081.a;Underlying revenue grow
+INFO   | Gold: 5444;The Group seeks to divers
+INFO   | Gold: 2972.b;The mix of metals sold 
+INFO   | Gold: 5069.2.a;It adopts the UK Corp
+INFO   | Gold: 3553;Head office costs increas
+INFO   | Gold: 4069.a;We know that our custom
+INFO   | Gold: 5025;The Directors believe tha
+INFO   | Gold: 2941;Despite cash outflows of 
+INFO   | Gold: 1472;The maximum bonus opportu
+INFO   | Gold: 3897;At this stage the Board d
+INFO   | Gold: 5184.a;The £13.2m year-on-year
+INFO   | Gold: 5476;Credit risk within our tr
+INFO   | Gold: 6028.a;As the proposals remain
+INFO   | Gold: 5478;Having assessed all of th
+INFO   | Gold: 2940;In March 2017, Mr N Holli
+INFO   | Gold: 4782;Senior has significantly 
+INFO   | Gold: 1634.a;As the operation of the
+INFO   | Gold: 822;As per mandatory greenhous
+INFO   | Gold: 5069.6;New directors receive f
+INFO   | Gold: 4006.b;(11) WAIO – BKM Ore Res
+INFO   | Gold: 913.a;After making enquiries, 
+INFO   | Gold: 2524;The controls in place hav
+INFO   | Gold: 4003;As a result of our focus,
+INFO   | Gold: 5427;"Liquidity risk is primar
+INFO   | Gold: 5307;As a result of our perfor
+INFO   | Gold: 5063;Zegona has exercised its 
+INFO   | Gold: 3754;As a result of our explor
+INFO   | Gold: 5013.a;Shipping is an industry
+INFO   | Gold: 5006;The final outcome under t
+INFO   | Gold: 3884.a;Appointment of Chief Fi
+INFO   | Gold: 1572;82 / Petrofac Annual repo
+INFO   | Gold: 1157;Due to the high profile o
+INFO   | Gold: 1376;The CIT business helps go
+INFO   | Gold: 5439;The operating profit, bef
+INFO   | Gold: 834.a;Human and environmental 
+INFO   | Gold: 1396;Relationship Agreement. P
+INFO   | Gold: 1652.b;The tax charge was low 
+INFO   | Gold: 3011;Net cash provided by oper
+INFO   | Gold: 1522;Our overall score in the 
+INFO   | Gold: 1864;The Group's South African
+INFO   | Gold: 2708;The Board will review the
+INFO   | Gold: 826;Property, plant and equipm
+INFO   | Gold: 5323.2.a;The strategic initiat
+INFO   | Gold: 6107;In light of the stipulati
+INFO   | Gold: 5279;Your Board also launched 
+INFO   | Gold: 5209;Deloitte LLP has been the
+INFO   | Gold: 1170.b;Towards the end of 2017
+INFO   | Gold: 5437;All members were able to 
+INFO   | Gold: 900;The Audit Committee review
+INFO   | Gold: 6006.a;As noted in the 2017 In
+INFO   | Gold: 2500;During the year, the Comp
+INFO   | Gold: 2784;"EPC assessments had been
+INFO   | Gold: 2191;Also, as previously annou
+INFO   | Gold: 828;"As noted in the Strategic
+INFO   | Gold: 1551;The UK business has a num
+INFO   | Gold: 6126.a;Our people are our grea
+INFO   | Gold: 3804;The increase in occupatio
+INFO   | Gold: 891.a;• Under the new policy, 
+INFO   | Gold: 3076;The Audit Committee consi
+INFO   | Gold: 2433;The Group has made pleasi
+INFO   | Gold: 1109;Share based charges incre
+INFO   | Gold: 1762;The risk register is revi
+INFO   | Gold: 1840;The fees paid to Non-Exec
+INFO   | Gold: 2869.b;The fundamentals of the
+INFO   | Gold: 3652;The Committee has chosen 
+INFO   | Gold: 5018.1;Crest Nicholson is comm
+INFO   | Gold: 5120;This report, describes ho
+INFO   | Gold: 4002;Performance against the c
+INFO   | Gold: 3727;In the core scanning area
+INFO   | Gold: 2283;Healthcare is based on se
+INFO   | Gold: 5222.1;These are some of the I
+INFO   | Gold: 2333;Stalbridge's flexible and
+INFO   | Gold: 1952;Studies show that the nee
+INFO   | Gold: 1671;Considered management's a
+INFO   | Gold: 1337.b;Macfarlane Group uses t
+INFO   | Gold: 5076.2;Suppliers that are bein
+INFO   | Gold: 3667.b;Gross margins declined 
+INFO   | Gold: 5461.a;Further, due to the Gro
+INFO   | Gold: 5042.1;"Following a review of 
+INFO   | Gold: 1645;Other operating costs, ex
+INFO   | Gold: 1078;Due to the seasonality of
+INFO   | Gold: 1622;As a result of the mitiga
+INFO   | Gold: 2984;Communication is key to i
+INFO   | Gold: 2600;Gross profit for the year
+INFO   | Gold: 938;We generated just under 1.
+INFO   | Gold: 3571;As a result of these proc
+INFO   | Gold: 6180.3;The Committee considers
+INFO   | Gold: 5090;In the prior year, other 
+INFO   | Gold: 2051;NCC Group understands tha
+INFO   | Gold: 4000;Foreign exchange manageme
+INFO   | Gold: 5391;Net debt increased by £3.
+INFO   | Gold: 5247.2;Cash at bank closed at 
+INFO   | Gold: 5238.a;The Risk Oversight Comm
+INFO   | Gold: 2279.a;Sales growth Customers 
+INFO   | Gold: 3251;Stephen Inglis received n
+INFO   | Gold: 5233.b;There was strong growth
+INFO   | Gold: 5074.2.a;Inferred resources in
+INFO   | Gold: 5370;The Board concluded that 
+INFO   | Gold: 6066;The UK average salary and
+INFO   | Gold: 3319;Market risk is the risk t
+INFO   | Gold: 6023.b;"Taking into account th
+INFO   | Gold: 3267;The Board has the primary
+INFO   | Gold: 6168.3;The International divis
+INFO   | Gold: 3688.b;"The value of the Octob
+INFO   | Gold: 3603;The Board decided to proc
+INFO   | Gold: 5374.2;US expenses grew 33% to
+INFO   | Gold: 5175.2.b;The favourable curren
+INFO   | Gold: 5348;Having robust governance 
+INFO   | Gold: 891.b;• Under the new policy, 
+INFO   | Gold: 1437;Includes amortisation of 
+INFO   | Gold: 3302.a;– Loss of competitive a
+INFO   | Gold: 2858;Trading property is carri
+INFO   | Gold: 1285;These are amounts invoice
+INFO   | Gold: 3610;Salaries were £39.0m (201
+INFO   | Gold: 3839.b;Free cash flow 2 for th
+INFO   | Gold: 5290;Group borrowings were £53
+INFO   | Gold: 2682;The Group holds material 
+INFO   | Gold: 2507;(2) Escondida – The decre
+INFO   | Gold: 753;Seek to mitigate the impac
+INFO   | Gold: 1919;Community unrest at Barbe
+INFO   | Gold: 8844;An interim dividend of 4.
+INFO   | Gold: 1816;Paul Daccus has an intere
+INFO   | Gold: 5175.1;In the Group's manufact
+INFO   | Gold: 3974;Dividends paid to shareho
+INFO   | Gold: 3126.b;Asset management sales 
+INFO   | Gold: 1625;There has been no change 
+INFO   | Gold: 1284.b;Recognising that women 
+INFO   | Gold: 2534;The Group is making inves
+INFO   | Gold: 1434.a;Clontarf had held a 3% 
+INFO   | Gold: 1742.a;A lengthy recruitment p
+INFO   | Gold: 2264;2. Due to prior commitmen
+INFO   | Gold: 3813;Performance during the ye
+INFO   | Gold: 4025;Operating expenses EBITDA
+INFO   | Gold: 5284;We suffer financial or re
+INFO   | Gold: 1937.b;Taxable benefits paid t
+INFO   | Gold: 1270;Furthermore, in some inst
+INFO   | Gold: 2465.b;"In defined benefit pen
+INFO   | Gold: 2709;Commentary: We believe th
+INFO   | Gold: 2364;For 2017, the Committee h
+INFO   | Gold: 1415;During 2017 one new analy
+INFO   | Gold: 5402;We supported a programme 
+INFO   | Gold: 6098.2;The Committee considere
+INFO   | Gold: 879;There has been increase in
+INFO   | Gold: 2444;The Company has no employ
+INFO   | Gold: 1812;Revenue of £0.5 million (
+INFO   | Gold: 3796;The Group's net borrowing
+INFO   | Gold: 1123;The total net deferred ta
+INFO   | Gold: 5269.3.a;Given current market 
+INFO   | Gold: 1781;The Leisure Travel busine
+INFO   | Gold: 5233.a;There was strong growth
+INFO   | Gold: 1027;The effective tax rate (b
+INFO   | Gold: 1981;The guaranteed product ne
+INFO   | Gold: 1515;The main variance in reve
+INFO   | Gold: 5026.a;The key strengths of ou
+INFO   | Gold: 6098.1;The Committee considere
+INFO   | Gold: 1434.b;Clontarf had held a 3% 
+INFO   | Gold: 2386;The Nationwide Foundation
+INFO   | Gold: 3990;Total net assets at 31 De
+INFO   | Gold: 3157;Our Connected World Servi
+INFO   | Gold: 5026.b;The key strengths of ou
+INFO   | Gold: 1159;Due to the Group's curren
+INFO   | Gold: 2165;The ALKAMMONIA project ha
+INFO   | Gold: 1863;This was augmented by our
+INFO   | Gold: 5417.b;Operating cash flow ros
+INFO   | Gold: 1309;I joined Columbus because
+INFO   | Gold: 3201;The Commercial COR of 93.
+INFO   | Gold: 4097.b;There is no assessed ra
+INFO   | Gold: 2026;The Group's plans to impl
+INFO   | Gold: 909;"Management's commitment t
+INFO   | Gold: 2930.a;Other costs decreased b
+INFO   | Gold: 6077.2;As a company listed on 
+INFO   | Gold: 8918;Net cash provided by fina
+INFO   | Gold: 1793;During a challenging year
+INFO   | Gold: 2410;Energy prices remain unce
+INFO   | Gold: 1814;In March 2017, we announc
+INFO   | Gold: 1023;Operating profit increase
+INFO   | Gold: 5318;As a result of the Group'
+INFO   | Gold: 2601;The strong corporate resp
+INFO   | Gold: 6109;We were very pleased to r
+INFO   | Gold: 5252;3 Craig Lovelace received
+INFO   | Gold: 3936;The impact of operating a
+INFO   | Gold: 3579;The net liability for def
+INFO   | Gold: 2440;As a consequence of the n
+INFO   | Gold: 2306;Disposals of existing inv
+INFO   | Gold: 763;Our operations are located
+INFO   | Gold: 4080;The GB supply chain inves
+INFO   | Gold: 2435;Arix has three very senio
+INFO   | Gold: 3606;"The committee have consi
+INFO   | Gold: 767;By fostering an inclusion 
+INFO   | Gold: 3230;The total of current and 
+INFO   | Gold: 3476;Targets (financial and no
+INFO   | Gold: 6004;India has an extensive po
+INFO   | Gold: 2459;From May 2015 Peter Crook
+INFO   | Gold: 3713;Looking forward, the Grou
+INFO   | Gold: 792;Subsequent programme updat
+INFO   | Gold: 5346.2;Given the widespread ad
+INFO   | Gold: 2568;"The budget, and therefor
+INFO   | Gold: 1439;Our portfolio saw a valua
+INFO   | Gold: 2493;3 Lee Hsien Yang was unab
+INFO   | Gold: 3872;Production Average daily 
+INFO   | Gold: 3868;One immaterial difference
+INFO   | Gold: 6095.3;Mr Lewis received 27,19
+INFO   | Gold: 2484.b;UK 2017 was another dif
+INFO   | Gold: 4007;High CEO Board This risk 
+INFO   | Gold: 831;Long-Term Incentive Plans 
+INFO   | Gold: 2746;Our PGM investment, a 6% 
+INFO   | Gold: 6162;The effective tax rate wa
+INFO   | Gold: 5054;Comparator group is all c
+INFO   | Gold: 4156;b) Sir David Howard is ov
+INFO   | Gold: 5144.a;Goodwill increased by £
+INFO   | Gold: 3169.b;Increase in property co
+INFO   | Gold: 1886;Consumable gross margin i
+INFO   | Gold: 1637;The Remuneration Committe
+INFO   | Gold: 2577;The second Non-Executive 
+INFO   | Gold: 6027;Executive directors recei
+INFO   | Gold: 3106;The policy on remuneratio
+INFO   | Gold: 759.a;The gross margins have r
+INFO   | Gold: 5335.b;The Group has carried o
+INFO   | Gold: 2647;The Board has considered 
+INFO   | Gold: 5013.b;Shipping is an industry
+INFO   | Gold: 2450.b;Finance costs decreased
+INFO   | Gold: 1783;There are significant ext
+INFO   | Gold: 1050;The Society continues to 
+INFO   | Gold: 2456;The directors have confir
+INFO   | Gold: 935;The Group has successfully
+INFO   | Gold: 1897;e) In May 2016 the non-ex
+INFO   | Gold: 6168.1;In the Marine and Techn
+INFO   | Gold: 1594;The Board has considered 
+INFO   | Gold: 2437;As a consequence of a wid
+INFO   | Gold: 5259.b;Having undertaken a rev
+INFO   | Gold: 1493.b;As a result of our scop
+INFO   | Gold: 6084.a;Failure of our systems 
+INFO   | Gold: 5374.1.a;Retail expenses grew 
+INFO   | Gold: 5396.2.b;This planning has ena
+INFO   | Gold: 5346.1;The regulatory pressure
+INFO   | Gold: 3788.a;The performance of the 
+INFO   | Gold: 6103.b;Adjusted profit before 
+INFO   | Gold: 1953.b;The Group's bank intere
+INFO   | Gold: 837;The Group is mainly engage
+INFO   | Gold: 835.b;Key Metrics Risk-weighte
+INFO   | Gold: 2429.a;When the Company listed
+INFO   | Gold: 4041;Due to the Group's small 
+INFO   | Gold: 5368;The Company has no employ
+INFO   | Gold: 1018.2;During the year, the we
+INFO   | Gold: 3057;After taking into account
+INFO   | Gold: 4090;The Committee discussed t
+INFO   | Gold: 3016;The Company experienced N
+INFO   | Gold: 1302;However, it is our strate
+INFO   | Gold: 3192.a;Other income comprises 
+INFO   | Gold: 3890;The USA schemes deficit d
+INFO   | Gold: 2385;"Our investments in commu
+INFO   | Gold: 5467;PHP's sector-leading metr
+INFO   | Gold: 5082.b;The audit committee is 
+INFO   | Gold: 2212;As a result of share pric
+INFO   | Gold: 1030;This exposure testing pro
+INFO   | Gold: 3322;2 Synergies savings refle
+INFO   | Gold: 1458;The Company is an Authori
+INFO   | Gold: 3565;* Andrew Harrison did not
+INFO   | Gold: 6116;The CGC is additionally r
+INFO   | Gold: 2237;The MSCI ACWI Healthcare 
+INFO   | Gold: 920.a;This increase is largely
+INFO   | Gold: 2636;In the run up to the Comp
+INFO   | Gold: 3717;The 2% underlying decline
+INFO   | Gold: 1770;The Group continues to fo
+INFO   | Gold: 5144.b;Goodwill increased by £
+INFO   | Gold: 2604;A non-cash impairment cha
+INFO   | Gold: 4145;ROCE, defined as EBITA / 
+INFO   | Gold: 5056.1;"There are no specific 
+INFO   | Gold: 5030;As a result of the strate
+INFO   | Gold: 6006.b;As noted in the 2017 In
+INFO   | Gold: 2192;Due to its size and struc
+INFO   | Gold: 3817;Given the Group is curren
+INFO   | Gold: 2772.a;As part of the Company'
+INFO   | Gold: 1821;Foreign exchange rate mov
+INFO   | Gold: 6180.2;Driving a reduction in 
+INFO   | Gold: 1147;As a result of the contin
+INFO   | Gold: 5226;Action taken this year to
+INFO   | Gold: 2238;Revenue for Gleeson Strat
+INFO   | Gold: 1146;The Group's total capital
+INFO   | Gold: 2499;We are committed to provi
+INFO   | Gold: 5170.a;In its first full year 
+INFO   | Gold: 2032;As a good leaver he will,
+INFO   | Gold: 4010.b;The majority of the Gro
+INFO   | Gold: 1937.a;Taxable benefits paid t
+INFO   | Gold: 2368;Loss on revaluation and s
+INFO   | Gold: 5118;The Directors have a reas
+INFO   | Gold: 1999;The Group maintains appro
+INFO   | Gold: 5401.1;With sufficient develop
+INFO   | Gold: 3740.a;• The business model fo
+INFO   | Gold: 768;During 2017, Sage welcomed
+INFO   | Gold: 2004.a;The Group's reported ne
+INFO   | Gold: 3050;The deficit is expected t
+INFO   | Gold: 945;Due to the diversity of ou
+INFO   | Gold: 1245;Awards under the 2014 LTA
+INFO   | Gold: 1296;Due to the size of the Bo
+INFO   | Gold: 1929.2;The Board has establish
+INFO   | Gold: 3125;Fair value is measured us
+INFO   | Gold: 3679;In light of the structure
+INFO   | Gold: 5092;In addition to our retail
+INFO   | Gold: 1206.a;Higher interest income,
+INFO   | Gold: 5015.2;The gross margin from l
+INFO   | Gold: 5059;The risk of losses arisin
+INFO   | Gold: 2794;"Payroll and staff costs 
+INFO   | Gold: 6121;In accordance with the FR
+INFO   | Gold: 1254;Production from the Premi
+INFO   | Gold: 960;As a result of these actio
+INFO   | Gold: 2450.a;Finance costs decreased
+INFO   | Gold: 2197;Ophir's Board agreed a ch
+INFO   | Gold: 5477;The Company has discontin
+INFO   | Gold: 5073;"Here we check Adulthood,
+INFO   | Gold: 5085.1.a;The portfolio had ben
+INFO   | Gold: 2634;The valuer proposed chang
+INFO   | Gold: 1501.a;Our business model is f
+INFO   | Gold: 3541;An impairment loss of £0.
+INFO   | Gold: 1001;• Resin and other raw mat
+INFO   | Gold: 5396.2.a;This planning has ena
+INFO   | Gold: 1326.a;The Total Marketable Co
+INFO   | Gold: 4056;The Insurance Support Ser
+INFO   | Gold: 2297;• Kapan's TCC were US$871
+INFO   | Gold: 5074.1;We expect to commence b
+INFO   | Gold: 899;To spread the risk where p
+INFO   | Gold: 5326;The board views the non-e
+INFO   | Gold: 4151;Mitigation: The general p
+INFO   | Gold: 3328;The chart opposite shows 
+INFO   | Gold: 2955;In May, we successfully c
+INFO   | Gold: 1725;Segmental performance In 
+INFO   | Gold: 3887;• Non-current assets incr
+INFO   | Gold: 2446.a;Based on performance to
+INFO   | Gold: 1950;• Europe and North Americ
+INFO   | Gold: 1429;The Board considers risk 
+INFO   | Gold: 6136.a;As a venture capital tr
+INFO   | Gold: 1317;Motor risk adjusted price
+INFO   | Gold: 1131;At 31 March 2017, the net
+INFO   | Gold: 5277;The proposed structure of
+INFO   | Gold: 5028;As a result of the person
+INFO   | Gold: 4097.a;There is no assessed ra
+INFO   | Gold: 3664;Other interests in joint 
+INFO   | Gold: 6185.2;As a result of the depa
+INFO   | Gold: 5470.a;Adjusted EBITDA grew by
+INFO   | Gold: 5393.2.a;Whilst the Pound trad
+INFO   | Gold: 3952;Current assets increased 
+INFO   | Gold: 3921;Cumulative free cash flow
+INFO   | Gold: 3088.a;Group net assets at the
+INFO   | Gold: 5104.1;"Property, plant and eq
+INFO   | Gold: 3198;Balance sheet and cash Ne
+INFO   | Gold: 5147.2;During 2017, we sold re
+INFO   | Gold: 1784.a;Shareholders will be aw
+INFO   | Gold: 6101.a;After taking account of
+INFO   | Gold: 1914;The Group's outcome-orien
+INFO   | Gold: 752;Conduct risk. Customer out
+INFO   | Gold: 1546;In accordance with Articl
+INFO   | Gold: 1924;In addition to designing 
+INFO   | Gold: 1205;Our objectives are to obt
+INFO   | Gold: 6041.1;• In a highly competiti
+INFO   | Gold: 2193;The outcome of the annual
+INFO   | Gold: 2679;Long-term incentive plan 
+INFO   | Gold: 6005.b;"Miles Roberts Group Ch
+INFO   | Gold: 2692;For the 12 months followi
+INFO   | Gold: 2730;Impairment of goodwill an
+INFO   | Gold: 3927.a;Reported profit before 
+INFO   | Gold: 6093;Having undertaken its rev
+INFO   | Gold: 4029.b;During the financial ye
+INFO   | Gold: 3783;Patrick Bousquet-Chavanne
+INFO   | Gold: 3815;Thanks are due to Stephen
+INFO   | Gold: 3680;Presentation of non-tradi
+INFO   | Gold: 930;Translation of the Group's
+INFO   | Gold: 1261;As a result of the Neptun
+INFO   | Gold: 5230;Our employees continue to
+INFO   | Gold: 2253;Maximum bonus payments ar
+INFO   | Gold: 5392;The newly combined UK Div
+INFO   | Gold: 3572;Because the BHC Act gener
+INFO   | Gold: 8936;It is undeniable that at 
+INFO   | Gold: 1244;As a result of the actual
+INFO   | Gold: 2756;In view of this excellent
+INFO   | Gold: 1178;Revenue from our Strategi
+INFO   | Gold: 2854.a;A further issue stemmin
+INFO   | Gold: 5443.b;We made some adjustment
+INFO   | Gold: 1735;The Company operates in n
+INFO   | Gold: 1094;Tungsten is constantly de
+INFO   | Gold: 3326;Succession planning has a
+INFO   | Gold: 1817;Other income comprises co
+INFO   | Gold: 2047;– Inadequate innovation d
+INFO   | Gold: 3259;The tax rate on adjusted 
+INFO   | Gold: 1656;However, due to the size 
+INFO   | Gold: 5049;Whilst the impact of a ch
+INFO   | Gold: 5212;Our diverse development p
+INFO   | Gold: 1684;Based on the considerable
+INFO   | Gold: 1327;The Board has therefore a
+INFO   | Gold: 1979.a;We remain committed to 
+INFO   | Gold: 3174.b;All instances of Board 
+INFO   | Gold: 3886;No emissions data has bee
+INFO   | Gold: 2929;External servicing fees d
+INFO   | Gold: 1343;The risk of loss to the f
+INFO   | Gold: 2232.a;These developments have
+INFO   | Gold: 6130;Given that this was Jerem
+INFO   | Gold: 2485;10. The Executive Directo
+INFO   | Gold: 5078.2;The Group has undertake
+INFO   | Gold: 6136.b;As a venture capital tr
+INFO   | Gold: 3822.a;5. Helen Grantham held 
+INFO   | Gold: 5143;We believe that it is sti
+INFO   | Gold: 5396.1;The changes to the Boar
+INFO   | Gold: 1512;Long-term value creation 
+INFO   | Gold: 5178;At 30 June 2017, a charge
+INFO   | Gold: 771;• A leading British person
+INFO   | Gold: 3051.a;For the reasons set out
+INFO   | Gold: 1290;Prior year adjustments to
+INFO   | Gold: 5389;Drilling rig contract ren
+INFO   | Gold: 1384;Costs incurred as a resul
+INFO   | Gold: 1150;The Group has a net defer
+INFO   | Gold: 6172.b;Management believes foc
+INFO   | Gold: 8901;The strong growth in the 
+INFO   | Gold: 1401;We believe that the combi
+INFO   | Gold: 6028.b;As the proposals remain
+INFO   | Gold: 6132.b;The US Dollar PGM baske
+INFO   | Gold: 825;• The business management 
+INFO   | Gold: 6133;Colin Jones is on differe
+INFO   | Gold: 5374.1.b;Retail expenses grew 
+INFO   | Gold: 6042;The Company is subject to
+INFO   | Gold: 1531.b;* In 2016 we reclassifi
+INFO   | Gold: 972;Audit committee performanc
+INFO   | Gold: 1923.a;People costs continue t
+INFO   | Gold: 5393.1;The final piece in the 
+INFO   | Gold: 5007.3;As the Manager takes ad
+INFO   | Gold: 6139.1;Throughout the Strategi
+INFO   | Gold: 754.a;These testimonials and c
+INFO   | Gold: 3908;The return on capital emp
+INFO   | Gold: 1097;As in India, prices in th
+INFO   | Gold: 2447;We see significant and gr
+INFO   | Gold: 1304;Developing and upgrading 
+INFO   | Gold: 766;Settlement of share option
+INFO   | Gold: 3884.b;Appointment of Chief Fi
+INFO   | Gold: 3228;A share-based payments ch
+INFO   | Gold: 3801;There are no formal salar
+INFO   | Gold: 2739;Net assets as at 31 July 
+INFO   | Gold: 1648.b;There are occasions whe
+INFO   | Gold: 5007.2.b;In accordance with th
+INFO   | Gold: 3684;As a result of the acquis
+INFO   | Gold: 1229.a;VYVANSE product sales f
+INFO   | Gold: 3064;Non-underlying items are 
+INFO   | Gold: 8848;Annual Earnings at Risk (
+INFO   | Gold: 5450;John Pettigrew succeeded 
+INFO   | Gold: 5232;Dame Helen Alexander was 
+INFO   | Gold: 3145;All-employee share plans 
+INFO   | Gold: 5148;Following an extensive pr
+INFO   | Gold: 9084;Supporting the Company's 
+INFO   | Gold: 9087;Finally, we pledged to en
+INFO   | Gold: 9088.a;Following Savills Inves
+INFO   | Gold: 9088.b;Following Savills Inves
+INFO   | Submission file: data/input_data_evaluation_en_bert-base-cased_BIO_annotation_corrected.csv
+INFO   | Sub: ID;Text;Question;Answer
+INFO   | Sub: 2759;The fees of the non-execu
+INFO   | Sub: 2259.a;The Directors believe t
+INFO   | Sub: 2123.a;Owing to the Company's 
+INFO   | Sub: 1882.b;Underlying Group EBITDA
+INFO   | Sub: 1117;No further disclosure is 
+INFO   | Sub: 6120;The market in closed-end 
+INFO   | Sub: 5146;The Group retains an owne
+INFO   | Sub: 1994;The Group's business is s
+INFO   | Sub: 2790.a;LTL's relative underper
+INFO   | Sub: 1849.a;The Group provides a br
+INFO   | Sub: 1876;2017 summary > Revenue im
+INFO   | Sub: 1792.b;The Company is not with
+INFO   | Sub: 3173;2 Based on the cash retur
+INFO   | Sub: 2018.a;Reduced number of activ
+INFO   | Sub: 2712;Our simplification journe
+INFO   | Sub: 2880;Based on their assessment
+INFO   | Sub: 925.b;Due to the size and comp
+INFO   | Sub: 2046;This result illustrates h
+INFO   | Sub: 3024.a;The reduction in the ra
+INFO   | Sub: 5234;Following the poor perfor
+INFO   | Sub: 5055.b;We believe that it is c
+INFO   | Sub: 5091.2.b;At present, the metho
+INFO   | Sub: 5007.2.a;In accordance with th
+INFO   | Sub: 993;The Remuneration Committee
+INFO   | Sub: 3029;Following several postpon
+INFO   | Sub: 5413;The restructuring proposa
+INFO   | Sub: 6050;The Directors are able to
+INFO   | Sub: 1635;The Company incurs signif
+INFO   | Sub: 2358;Earnings per share As a r
+INFO   | Sub: 2946;Macadamia production in 2
+INFO   | Sub: 3929;The value of each Incenti
+INFO   | Sub: 5031.a;We need to have an orga
+INFO   | Sub: 4147.b;Portfolio performance r
+INFO   | Sub: 1025;Alternative performance m
+INFO   | Sub: 5231;Towards the end of 2016, 
+INFO   | Sub: 1599;Due to the modest size of
+INFO   | Sub: 3641;The Board has assessed it
+INFO   | Sub: 3903;The financial year being 
+INFO   | Sub: 1024;In addition, the Group al
+INFO   | Sub: 2542;The European schemes defi
+INFO   | Sub: 806;As a result, revenue was t
+INFO   | Sub: 5127;Approved LTIP awards enab
+INFO   | Sub: 3030;The index grew by 8.6% on
+INFO   | Sub: 5171.1.a;The oil distribution 
+INFO   | Sub: 2054;There are a number of ris
+INFO   | Sub: 3994;The Directors, having mad
+INFO   | Sub: 6111;Destruction rates were sl
+INFO   | Sub: 5471.b;Due to timing of the 20
+INFO   | Sub: 3004;The Audit and Risk Commit
+INFO   | Sub: 2489;As a result of the Group'
+INFO   | Sub: 5081.a;Underlying revenue grow
+INFO   | Sub: 5444;The Group seeks to divers
+INFO   | Sub: 2972.b;The mix of metals sold 
+INFO   | Sub: 5069.2.a;It adopts the UK Corp
+INFO   | Sub: 3553;Head office costs increas
+INFO   | Sub: 4069.a;We know that our custom
+INFO   | Sub: 5025;The Directors believe tha
+INFO   | Sub: 2941;Despite cash outflows of 
+INFO   | Sub: 1472;The maximum bonus opportu
+INFO   | Sub: 3897;At this stage the Board d
+INFO   | Sub: 5184.a;The £13.2m year-on-year
+INFO   | Sub: 5476;Credit risk within our tr
+INFO   | Sub: 6028.a;As the proposals remain
+INFO   | Sub: 5478;Having assessed all of th
+INFO   | Sub: 2940;In March 2017, Mr N Holli
+INFO   | Sub: 4782;Senior has significantly 
+INFO   | Sub: 1634.a;As the operation of the
+INFO   | Sub: 822;As per mandatory greenhous
+INFO   | Sub: 5069.6;New directors receive f
+INFO   | Sub: 4006.b;(11) WAIO – BKM Ore Res
+INFO   | Sub: 913.a;After making enquiries, 
+INFO   | Sub: 2524;The controls in place hav
+INFO   | Sub: 4003;As a result of our focus,
+INFO   | Sub: 5427;"Liquidity risk is primar
+INFO   | Sub: 5307;As a result of our perfor
+INFO   | Sub: 5063;Zegona has exercised its 
+INFO   | Sub: 3754;As a result of our explor
+INFO   | Sub: 5013.a;Shipping is an industry
+INFO   | Sub: 5006;The final outcome under t
+INFO   | Sub: 3884.a;Appointment of Chief Fi
+INFO   | Sub: 1572;82 / Petrofac Annual repo
+INFO   | Sub: 1157;Due to the high profile o
+INFO   | Sub: 1376;The CIT business helps go
+INFO   | Sub: 5439;The operating profit, bef
+INFO   | Sub: 834.a;Human and environmental 
+INFO   | Sub: 1396;Relationship Agreement. P
+INFO   | Sub: 1652.b;The tax charge was low 
+INFO   | Sub: 3011;Net cash provided by oper
+INFO   | Sub: 1522;Our overall score in the 
+INFO   | Sub: 1864;The Group's South African
+INFO   | Sub: 2708;The Board will review the
+INFO   | Sub: 826;Property, plant and equipm
+INFO   | Sub: 5323.2.a;The strategic initiat
+INFO   | Sub: 6107;In light of the stipulati
+INFO   | Sub: 5279;Your Board also launched 
+INFO   | Sub: 5209;Deloitte LLP has been the
+INFO   | Sub: 1170.b;Towards the end of 2017
+INFO   | Sub: 5437;All members were able to 
+INFO   | Sub: 900;The Audit Committee review
+INFO   | Sub: 6006.a;As noted in the 2017 In
+INFO   | Sub: 2500;During the year, the Comp
+INFO   | Sub: 2784;"EPC assessments had been
+INFO   | Sub: 2191;Also, as previously annou
+INFO   | Sub: 828;"As noted in the Strategic
+INFO   | Sub: 1551;The UK business has a num
+INFO   | Sub: 6126.a;Our people are our grea
+INFO   | Sub: 3804;The increase in occupatio
+INFO   | Sub: 891.a;• Under the new policy, 
+INFO   | Sub: 3076;The Audit Committee consi
+INFO   | Sub: 2433;The Group has made pleasi
+INFO   | Sub: 1109;Share based charges incre
+INFO   | Sub: 1762;The risk register is revi
+INFO   | Sub: 1840;The fees paid to Non-Exec
+INFO   | Sub: 2869.b;The fundamentals of the
+INFO   | Sub: 3652;The Committee has chosen 
+INFO   | Sub: 5018.1;Crest Nicholson is comm
+INFO   | Sub: 5120;This report, describes ho
+INFO   | Sub: 4002;Performance against the c
+INFO   | Sub: 3727;In the core scanning area
+INFO   | Sub: 2283;Healthcare is based on se
+INFO   | Sub: 5222.1;These are some of the I
+INFO   | Sub: 2333;Stalbridge's flexible and
+INFO   | Sub: 1952;Studies show that the nee
+INFO   | Sub: 1671;Considered management's a
+INFO   | Sub: 1337.b;Macfarlane Group uses t
+INFO   | Sub: 5076.2;Suppliers that are bein
+INFO   | Sub: 3667.b;Gross margins declined 
+INFO   | Sub: 5461.a;Further, due to the Gro
+INFO   | Sub: 5042.1;"Following a review of 
+INFO   | Sub: 1645;Other operating costs, ex
+INFO   | Sub: 1078;Due to the seasonality of
+INFO   | Sub: 1622;As a result of the mitiga
+INFO   | Sub: 2984;Communication is key to i
+INFO   | Sub: 2600;Gross profit for the year
+INFO   | Sub: 938;We generated just under 1.
+INFO   | Sub: 3571;As a result of these proc
+INFO   | Sub: 6180.3;The Committee considers
+INFO   | Sub: 5090;In the prior year, other 
+INFO   | Sub: 2051;NCC Group understands tha
+INFO   | Sub: 4000;Foreign exchange manageme
+INFO   | Sub: 5391;Net debt increased by £3.
+INFO   | Sub: 5247.2;Cash at bank closed at 
+INFO   | Sub: 5238.a;The Risk Oversight Comm
+INFO   | Sub: 2279.a;Sales growth Customers 
+INFO   | Sub: 3251;Stephen Inglis received n
+INFO   | Sub: 5233.b;There was strong growth
+INFO   | Sub: 5074.2.a;Inferred resources in
+INFO   | Sub: 5370;The Board concluded that 
+INFO   | Sub: 6066;The UK average salary and
+INFO   | Sub: 3319;Market risk is the risk t
+INFO   | Sub: 6023.b;"Taking into account th
+INFO   | Sub: 3267;The Board has the primary
+INFO   | Sub: 6168.3;The International divis
+INFO   | Sub: 3688.b;"The value of the Octob
+INFO   | Sub: 3603;The Board decided to proc
+INFO   | Sub: 5374.2;US expenses grew 33% to
+INFO   | Sub: 5175.2.b;The favourable curren
+INFO   | Sub: 5348;Having robust governance 
+INFO   | Sub: 891.b;• Under the new policy, 
+INFO   | Sub: 1437;Includes amortisation of 
+INFO   | Sub: 3302.a;– Loss of competitive a
+INFO   | Sub: 2858;Trading property is carri
+INFO   | Sub: 1285;These are amounts invoice
+INFO   | Sub: 3610;Salaries were £39.0m (201
+INFO   | Sub: 3839.b;Free cash flow 2 for th
+INFO   | Sub: 5290;Group borrowings were £53
+INFO   | Sub: 2682;The Group holds material 
+INFO   | Sub: 2507;(2) Escondida – The decre
+INFO   | Sub: 753;Seek to mitigate the impac
+INFO   | Sub: 1919;Community unrest at Barbe
+INFO   | Sub: 8844;An interim dividend of 4.
+INFO   | Sub: 1816;Paul Daccus has an intere
+INFO   | Sub: 5175.1;In the Group's manufact
+INFO   | Sub: 3974;Dividends paid to shareho
+INFO   | Sub: 3126.b;Asset management sales 
+INFO   | Sub: 1625;There has been no change 
+INFO   | Sub: 1284.b;Recognising that women 
+INFO   | Sub: 2534;The Group is making inves
+INFO   | Sub: 1434.a;Clontarf had held a 3% 
+INFO   | Sub: 1742.a;A lengthy recruitment p
+INFO   | Sub: 2264;2. Due to prior commitmen
+INFO   | Sub: 3813;Performance during the ye
+INFO   | Sub: 4025;Operating expenses EBITDA
+INFO   | Sub: 5284;We suffer financial or re
+INFO   | Sub: 1937.b;Taxable benefits paid t
+INFO   | Sub: 1270;Furthermore, in some inst
+INFO   | Sub: 2465.b;"In defined benefit pen
+INFO   | Sub: 2709;Commentary: We believe th
+INFO   | Sub: 2364;For 2017, the Committee h
+INFO   | Sub: 1415;During 2017 one new analy
+INFO   | Sub: 5402;We supported a programme 
+INFO   | Sub: 6098.2;The Committee considere
+INFO   | Sub: 879;There has been increase in
+INFO   | Sub: 2444;The Company has no employ
+INFO   | Sub: 1812;Revenue of £0.5 million (
+INFO   | Sub: 3796;The Group's net borrowing
+INFO   | Sub: 1123;The total net deferred ta
+INFO   | Sub: 5269.3.a;Given current market 
+INFO   | Sub: 1781;The Leisure Travel busine
+INFO   | Sub: 5233.a;There was strong growth
+INFO   | Sub: 1027;The effective tax rate (b
+INFO   | Sub: 1981;The guaranteed product ne
+INFO   | Sub: 1515;The main variance in reve
+INFO   | Sub: 5026.a;The key strengths of ou
+INFO   | Sub: 6098.1;The Committee considere
+INFO   | Sub: 1434.b;Clontarf had held a 3% 
+INFO   | Sub: 2386;The Nationwide Foundation
+INFO   | Sub: 3990;Total net assets at 31 De
+INFO   | Sub: 3157;Our Connected World Servi
+INFO   | Sub: 5026.b;The key strengths of ou
+INFO   | Sub: 1159;Due to the Group's curren
+INFO   | Sub: 2165;The ALKAMMONIA project ha
+INFO   | Sub: 1863;This was augmented by our
+INFO   | Sub: 5417.b;Operating cash flow ros
+INFO   | Sub: 1309;I joined Columbus because
+INFO   | Sub: 3201;The Commercial COR of 93.
+INFO   | Sub: 4097.b;There is no assessed ra
+INFO   | Sub: 2026;The Group's plans to impl
+INFO   | Sub: 909;"Management's commitment t
+INFO   | Sub: 2930.a;Other costs decreased b
+INFO   | Sub: 6077.2;As a company listed on 
+INFO   | Sub: 8918;Net cash provided by fina
+INFO   | Sub: 1793;During a challenging year
+INFO   | Sub: 2410;Energy prices remain unce
+INFO   | Sub: 1814;In March 2017, we announc
+INFO   | Sub: 1023;Operating profit increase
+INFO   | Sub: 5318;As a result of the Group'
+INFO   | Sub: 2601;The strong corporate resp
+INFO   | Sub: 6109;We were very pleased to r
+INFO   | Sub: 5252;3 Craig Lovelace received
+INFO   | Sub: 3936;The impact of operating a
+INFO   | Sub: 3579;The net liability for def
+INFO   | Sub: 2440;As a consequence of the n
+INFO   | Sub: 2306;Disposals of existing inv
+INFO   | Sub: 763;Our operations are located
+INFO   | Sub: 4080;The GB supply chain inves
+INFO   | Sub: 2435;Arix has three very senio
+INFO   | Sub: 3606;"The committee have consi
+INFO   | Sub: 767;By fostering an inclusion 
+INFO   | Sub: 3230;The total of current and 
+INFO   | Sub: 3476;Targets (financial and no
+INFO   | Sub: 6004;India has an extensive po
+INFO   | Sub: 2459;From May 2015 Peter Crook
+INFO   | Sub: 3713;Looking forward, the Grou
+INFO   | Sub: 792;Subsequent programme updat
+INFO   | Sub: 5346.2;Given the widespread ad
+INFO   | Sub: 2568;"The budget, and therefor
+INFO   | Sub: 1439;Our portfolio saw a valua
+INFO   | Sub: 2493;3 Lee Hsien Yang was unab
+INFO   | Sub: 3872;Production Average daily 
+INFO   | Sub: 3868;One immaterial difference
+INFO   | Sub: 6095.3;Mr Lewis received 27,19
+INFO   | Sub: 2484.b;UK 2017 was another dif
+INFO   | Sub: 4007;High CEO Board This risk 
+INFO   | Sub: 831;Long-Term Incentive Plans 
+INFO   | Sub: 2746;Our PGM investment, a 6% 
+INFO   | Sub: 6162;The effective tax rate wa
+INFO   | Sub: 5054;Comparator group is all c
+INFO   | Sub: 4156;b) Sir David Howard is ov
+INFO   | Sub: 5144.a;Goodwill increased by £
+INFO   | Sub: 3169.b;Increase in property co
+INFO   | Sub: 1886;Consumable gross margin i
+INFO   | Sub: 1637;The Remuneration Committe
+INFO   | Sub: 2577;The second Non-Executive 
+INFO   | Sub: 6027;Executive directors recei
+INFO   | Sub: 3106;The policy on remuneratio
+INFO   | Sub: 759.a;The gross margins have r
+INFO   | Sub: 5335.b;The Group has carried o
+INFO   | Sub: 2647;The Board has considered 
+INFO   | Sub: 5013.b;Shipping is an industry
+INFO   | Sub: 2450.b;Finance costs decreased
+INFO   | Sub: 1783;There are significant ext
+INFO   | Sub: 1050;The Society continues to 
+INFO   | Sub: 2456;The directors have confir
+INFO   | Sub: 935;The Group has successfully
+INFO   | Sub: 1897;e) In May 2016 the non-ex
+INFO   | Sub: 6168.1;In the Marine and Techn
+INFO   | Sub: 1594;The Board has considered 
+INFO   | Sub: 2437;As a consequence of a wid
+INFO   | Sub: 5259.b;Having undertaken a rev
+INFO   | Sub: 1493.b;As a result of our scop
+INFO   | Sub: 6084.a;Failure of our systems 
+INFO   | Sub: 5374.1.a;Retail expenses grew 
+INFO   | Sub: 5396.2.b;This planning has ena
+INFO   | Sub: 5346.1;The regulatory pressure
+INFO   | Sub: 3788.a;The performance of the 
+INFO   | Sub: 6103.b;Adjusted profit before 
+INFO   | Sub: 1953.b;The Group's bank intere
+INFO   | Sub: 837;The Group is mainly engage
+INFO   | Sub: 835.b;Key Metrics Risk-weighte
+INFO   | Sub: 2429.a;When the Company listed
+INFO   | Sub: 4041;Due to the Group's small 
+INFO   | Sub: 5368;The Company has no employ
+INFO   | Sub: 1018.2;During the year, the we
+INFO   | Sub: 3057;After taking into account
+INFO   | Sub: 4090;The Committee discussed t
+INFO   | Sub: 3016;The Company experienced N
+INFO   | Sub: 1302;However, it is our strate
+INFO   | Sub: 3192.a;Other income comprises 
+INFO   | Sub: 3890;The USA schemes deficit d
+INFO   | Sub: 2385;"Our investments in commu
+INFO   | Sub: 5467;PHP's sector-leading metr
+INFO   | Sub: 5082.b;The audit committee is 
+INFO   | Sub: 2212;As a result of share pric
+INFO   | Sub: 1030;This exposure testing pro
+INFO   | Sub: 3322;2 Synergies savings refle
+INFO   | Sub: 1458;The Company is an Authori
+INFO   | Sub: 3565;* Andrew Harrison did not
+INFO   | Sub: 6116;The CGC is additionally r
+INFO   | Sub: 2237;The MSCI ACWI Healthcare 
+INFO   | Sub: 920.a;This increase is largely
+INFO   | Sub: 2636;In the run up to the Comp
+INFO   | Sub: 3717;The 2% underlying decline
+INFO   | Sub: 1770;The Group continues to fo
+INFO   | Sub: 5144.b;Goodwill increased by £
+INFO   | Sub: 2604;A non-cash impairment cha
+INFO   | Sub: 4145;ROCE, defined as EBITA / 
+INFO   | Sub: 5056.1;"There are no specific 
+INFO   | Sub: 5030;As a result of the strate
+INFO   | Sub: 6006.b;As noted in the 2017 In
+INFO   | Sub: 2192;Due to its size and struc
+INFO   | Sub: 3817;Given the Group is curren
+INFO   | Sub: 2772.a;As part of the Company'
+INFO   | Sub: 1821;Foreign exchange rate mov
+INFO   | Sub: 6180.2;Driving a reduction in 
+INFO   | Sub: 1147;As a result of the contin
+INFO   | Sub: 5226;Action taken this year to
+INFO   | Sub: 2238;Revenue for Gleeson Strat
+INFO   | Sub: 1146;The Group's total capital
+INFO   | Sub: 2499;We are committed to provi
+INFO   | Sub: 5170.a;In its first full year 
+INFO   | Sub: 2032;As a good leaver he will,
+INFO   | Sub: 4010.b;The majority of the Gro
+INFO   | Sub: 1937.a;Taxable benefits paid t
+INFO   | Sub: 2368;Loss on revaluation and s
+INFO   | Sub: 5118;The Directors have a reas
+INFO   | Sub: 1999;The Group maintains appro
+INFO   | Sub: 5401.1;With sufficient develop
+INFO   | Sub: 3740.a;• The business model fo
+INFO   | Sub: 768;During 2017, Sage welcomed
+INFO   | Sub: 2004.a;The Group's reported ne
+INFO   | Sub: 3050;The deficit is expected t
+INFO   | Sub: 945;Due to the diversity of ou
+INFO   | Sub: 1245;Awards under the 2014 LTA
+INFO   | Sub: 1296;Due to the size of the Bo
+INFO   | Sub: 1929.2;The Board has establish
+INFO   | Sub: 3125;Fair value is measured us
+INFO   | Sub: 3679;In light of the structure
+INFO   | Sub: 5092;In addition to our retail
+INFO   | Sub: 1206.a;Higher interest income,
+INFO   | Sub: 5015.2;The gross margin from l
+INFO   | Sub: 5059;The risk of losses arisin
+INFO   | Sub: 2794;"Payroll and staff costs 
+INFO   | Sub: 6121;In accordance with the FR
+INFO   | Sub: 1254;Production from the Premi
+INFO   | Sub: 960;As a result of these actio
+INFO   | Sub: 2450.a;Finance costs decreased
+INFO   | Sub: 2197;Ophir's Board agreed a ch
+INFO   | Sub: 5477;The Company has discontin
+INFO   | Sub: 5073;"Here we check Adulthood,
+INFO   | Sub: 5085.1.a;The portfolio had ben
+INFO   | Sub: 2634;The valuer proposed chang
+INFO   | Sub: 1501.a;Our business model is f
+INFO   | Sub: 3541;An impairment loss of £0.
+INFO   | Sub: 1001;• Resin and other raw mat
+INFO   | Sub: 5396.2.a;This planning has ena
+INFO   | Sub: 1326.a;The Total Marketable Co
+INFO   | Sub: 4056;The Insurance Support Ser
+INFO   | Sub: 2297;• Kapan's TCC were US$871
+INFO   | Sub: 5074.1;We expect to commence b
+INFO   | Sub: 899;To spread the risk where p
+INFO   | Sub: 5326;The board views the non-e
+INFO   | Sub: 4151;Mitigation: The general p
+INFO   | Sub: 3328;The chart opposite shows 
+INFO   | Sub: 2955;In May, we successfully c
+INFO   | Sub: 1725;Segmental performance In 
+INFO   | Sub: 3887;• Non-current assets incr
+INFO   | Sub: 2446.a;Based on performance to
+INFO   | Sub: 1950;• Europe and North Americ
+INFO   | Sub: 1429;The Board considers risk 
+INFO   | Sub: 6136.a;As a venture capital tr
+INFO   | Sub: 1317;Motor risk adjusted price
+INFO   | Sub: 1131;At 31 March 2017, the net
+INFO   | Sub: 5277;The proposed structure of
+INFO   | Sub: 5028;As a result of the person
+INFO   | Sub: 4097.a;There is no assessed ra
+INFO   | Sub: 3664;Other interests in joint 
+INFO   | Sub: 6185.2;As a result of the depa
+INFO   | Sub: 5470.a;Adjusted EBITDA grew by
+INFO   | Sub: 5393.2.a;Whilst the Pound trad
+INFO   | Sub: 3952;Current assets increased 
+INFO   | Sub: 3921;Cumulative free cash flow
+INFO   | Sub: 3088.a;Group net assets at the
+INFO   | Sub: 5104.1;"Property, plant and eq
+INFO   | Sub: 3198;Balance sheet and cash Ne
+INFO   | Sub: 5147.2;During 2017, we sold re
+INFO   | Sub: 1784.a;Shareholders will be aw
+INFO   | Sub: 6101.a;After taking account of
+INFO   | Sub: 1914;The Group's outcome-orien
+INFO   | Sub: 752;Conduct risk. Customer out
+INFO   | Sub: 1546;In accordance with Articl
+INFO   | Sub: 1924;In addition to designing 
+INFO   | Sub: 1205;Our objectives are to obt
+INFO   | Sub: 6041.1;• In a highly competiti
+INFO   | Sub: 2193;The outcome of the annual
+INFO   | Sub: 2679;Long-term incentive plan 
+INFO   | Sub: 6005.b;"Miles Roberts Group Ch
+INFO   | Sub: 2692;For the 12 months followi
+INFO   | Sub: 2730;Impairment of goodwill an
+INFO   | Sub: 3927.a;Reported profit before 
+INFO   | Sub: 6093;Having undertaken its rev
+INFO   | Sub: 4029.b;During the financial ye
+INFO   | Sub: 3783;Patrick Bousquet-Chavanne
+INFO   | Sub: 3815;Thanks are due to Stephen
+INFO   | Sub: 3680;Presentation of non-tradi
+INFO   | Sub: 930;Translation of the Group's
+INFO   | Sub: 1261;As a result of the Neptun
+INFO   | Sub: 5230;Our employees continue to
+INFO   | Sub: 2253;Maximum bonus payments ar
+INFO   | Sub: 5392;The newly combined UK Div
+INFO   | Sub: 3572;Because the BHC Act gener
+INFO   | Sub: 8936;It is undeniable that at 
+INFO   | Sub: 1244;As a result of the actual
+INFO   | Sub: 2756;In view of this excellent
+INFO   | Sub: 1178;Revenue from our Strategi
+INFO   | Sub: 2854.a;A further issue stemmin
+INFO   | Sub: 5443.b;We made some adjustment
+INFO   | Sub: 1735;The Company operates in n
+INFO   | Sub: 1094;Tungsten is constantly de
+INFO   | Sub: 3326;Succession planning has a
+INFO   | Sub: 1817;Other income comprises co
+INFO   | Sub: 2047;– Inadequate innovation d
+INFO   | Sub: 3259;The tax rate on adjusted 
+INFO   | Sub: 1656;However, due to the size 
+INFO   | Sub: 5049;Whilst the impact of a ch
+INFO   | Sub: 5212;Our diverse development p
+INFO   | Sub: 1684;Based on the considerable
+INFO   | Sub: 1327;The Board has therefore a
+INFO   | Sub: 1979.a;We remain committed to 
+INFO   | Sub: 3174.b;All instances of Board 
+INFO   | Sub: 3886;No emissions data has bee
+INFO   | Sub: 2929;External servicing fees d
+INFO   | Sub: 1343;The risk of loss to the f
+INFO   | Sub: 2232.a;These developments have
+INFO   | Sub: 6130;Given that this was Jerem
+INFO   | Sub: 2485;10. The Executive Directo
+INFO   | Sub: 5078.2;The Group has undertake
+INFO   | Sub: 6136.b;As a venture capital tr
+INFO   | Sub: 3822.a;5. Helen Grantham held 
+INFO   | Sub: 5143;We believe that it is sti
+INFO   | Sub: 5396.1;The changes to the Boar
+INFO   | Sub: 1512;Long-term value creation 
+INFO   | Sub: 5178;At 30 June 2017, a charge
+INFO   | Sub: 771;• A leading British person
+INFO   | Sub: 3051.a;For the reasons set out
+INFO   | Sub: 1290;Prior year adjustments to
+INFO   | Sub: 5389;Drilling rig contract ren
+INFO   | Sub: 1384;Costs incurred as a resul
+INFO   | Sub: 1150;The Group has a net defer
+INFO   | Sub: 6172.b;Management believes foc
+INFO   | Sub: 8901;The strong growth in the 
+INFO   | Sub: 1401;We believe that the combi
+INFO   | Sub: 6028.b;As the proposals remain
+INFO   | Sub: 6132.b;The US Dollar PGM baske
+INFO   | Sub: 825;• The business management 
+INFO   | Sub: 6133;Colin Jones is on differe
+INFO   | Sub: 5374.1.b;Retail expenses grew 
+INFO   | Sub: 6042;The Company is subject to
+INFO   | Sub: 1531.b;* In 2016 we reclassifi
+INFO   | Sub: 972;Audit committee performanc
+INFO   | Sub: 1923.a;People costs continue t
+INFO   | Sub: 5393.1;The final piece in the 
+INFO   | Sub: 5007.3;As the Manager takes ad
+INFO   | Sub: 6139.1;Throughout the Strategi
+INFO   | Sub: 754.a;These testimonials and c
+INFO   | Sub: 3908;The return on capital emp
+INFO   | Sub: 1097;As in India, prices in th
+INFO   | Sub: 2447;We see significant and gr
+INFO   | Sub: 1304;Developing and upgrading 
+INFO   | Sub: 766;Settlement of share option
+INFO   | Sub: 3884.b;Appointment of Chief Fi
+INFO   | Sub: 3228;A share-based payments ch
+INFO   | Sub: 3801;There are no formal salar
+INFO   | Sub: 2739;Net assets as at 31 July 
+INFO   | Sub: 1648.b;There are occasions whe
+INFO   | Sub: 5007.2.b;In accordance with th
+INFO   | Sub: 3684;As a result of the acquis
+INFO   | Sub: 1229.a;VYVANSE product sales f
+INFO   | Sub: 3064;Non-underlying items are 
+INFO   | Sub: 8848;Annual Earnings at Risk (
+INFO   | Sub: 5450;John Pettigrew succeeded 
+INFO   | Sub: 5232;Dame Helen Alexander was 
+INFO   | Sub: 3145;All-employee share plans 
+INFO   | Sub: 5148;Following an extensive pr
+INFO   | Sub: 9084;Supporting the Company's 
+INFO   | Sub: 9087;Finally, we pledged to en
+INFO   | Sub: 9088.a;Following Savills Inves
+INFO   | Sub: 9088.b;Following Savills Inves
+INFO   | * Loading reference data
+INFO   | * Loading prediction data
+INFO   | Load Data: check data set length = True
+INFO   | Load Data: check data set ref. context = True
