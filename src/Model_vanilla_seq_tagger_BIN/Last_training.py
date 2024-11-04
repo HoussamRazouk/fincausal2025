@@ -202,7 +202,7 @@ def train(config):
                 if val_loss < best_loss - min_delta:
                     best_loss = val_loss
                     # Create target Directory if it doesn't exist
-                    directory='src/Model_vanilla_seq_tagger_BIN/trained_models/'+LM_name.split('/')[-1]
+                    directory='src/Model_vanilla_seq_tagger_BIN/trained_models/'+LM_name.split('/')[-1]+'_BIN'
                     if not os.path.exists(directory):
                         os.mkdir(directory)
                         print("Directory ", directory, " created.")
@@ -210,7 +210,7 @@ def train(config):
                         print("Directory ", directory, " already exists.")
 
                     #torch.save(model, 'src/Model_vanilla_seq_tagger_BIN/trained_models/'+LM_name.split('/')[-1]+'/'+LM_name.split('/')[-1]+'_'+str(random_state)+'_model.pth')
-                    torch.save(model, 'src/Model_vanilla_seq_tagger_BIN/trained_models/'+LM_name.split('/')[-1]+'_BIN'+'/'+LM_name.split('/')[-1]+'_'+"Last training"+'_model.pth')
+                    torch.save(model, 'src/Model_vanilla_seq_tagger_BIN/trained_models/'+LM_name.split('/')[-1]+'_BIN'+'/'+LM_name.split('/')[-1]+'_'+Training_file.split('_')[-1]+"Last training"+'_model.pth')
                     
 
                     counter = 0
